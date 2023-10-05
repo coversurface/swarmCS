@@ -2,11 +2,11 @@
   <div class="wrapper">
     <h1 class="title">Hello World Notes</h1>
     <div class="buttons">
-      <button type="button" class="state-off">Btn1</button>
+      <button type="button" class="px-2 py-1 bg-green-300">Btn1</button>
       <button type="button" class="state-on">Btn1</button>
     </div>
     <div class="sites">
-      <p>{{ theTitle }}</p>
+      <p class="border border-red-500">{{ theTitle }}</p>
       <textarea
         rows="8"
         autocomplete="off"
