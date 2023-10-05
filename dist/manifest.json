@@ -1,0 +1,15 @@
+{
+  "name": "swarmCS",
+  "version": "0.1.0",
+  "description": "A very basic extension to quickly block or allow a list",
+  "host_permissions": ["http://*/", "https://*/"],
+  "icons": {
+    "16": "images/icon-16x16.png",
+    "48": "images/icon-48x48.png",
+    "128": "images/icon-128x128.png"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 3
+}
