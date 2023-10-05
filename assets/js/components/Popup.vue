@@ -42,7 +42,7 @@
     </div>
     <div class="col-span-12 flex flex-col justify-center items-center py-2">
       <button
-        class="flex flex-row justify-evenly items-center w-3/5 mx-4 py-1 rounded-md border border-[#f9ceb2] hover:bg-[#f9ceb2]"
+        class="flex flex-row justify-evenly items-center w-3/5 mx-4 py-1 rounded-md bg-gray-100 hover:bg-[#f9ceb2]"
       >
         <img src="./../../images/surface_icon.svg" alt="surface_icon" />
         <h1 class="text-gray-800 font-bold">My Surface</h1>
