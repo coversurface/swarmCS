@@ -6,7 +6,7 @@
       <button type="button" class="state-on">Btn1</button>
     </div>
     <div class="sites">
-      <p>My little notes</p>
+      <p>{{ theTitle }}</p>
       <textarea
         rows="8"
         autocomplete="off"
@@ -19,12 +19,9 @@
   </div>
 </template>
 
-<script lang="js">
-export default {
-  data() {
-    return {
-      atcive: true,
-    };
-  },
-};
+<script setup lang="ts">
+import { ref } from "vue";
+
+const atcive = ref<boolean>(true);
+const theTitle = ref<string>("My little title");
 </script>

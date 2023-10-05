@@ -9,10 +9,14 @@
     "watch": "npm run local -- --watch"
   },
   "devDependencies": {
+    "@types/node": "^20.8.2",
+    "@types/vue": "^2.0.0",
     "cross-env": "^7.0.3",
     "laravel-mix": "^6.0.49",
     "sass": "^1.66.1",
     "sass-loader": "^13.3.2",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.2.2",
     "vue": "^3.2.36",
     "vue-loader": "^16.8.3"
   }

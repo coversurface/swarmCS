@@ -17409,88 +17409,104 @@ function genPropsAccessExp(name) {
 
 /***/ }),
 
-/***/ "./assets/js/popup.js":
+/***/ "./assets/js/popup.ts":
 /*!****************************!*\
-  !*** ./assets/js/popup.js ***!
+  !*** ./assets/js/popup.ts ***!
   \****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-/* harmony import */ var _components_Popup_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Popup.vue */ "./assets/js/components/Popup.vue");
- // Import createApp from Vue 3
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+var vue_1 = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+var Popup_vue_1 = __webpack_require__(/*! ./components/Popup.vue */ "./assets/js/components/Popup.vue");
 // Create a new Vue 3 app instance and mount it to an element with the ID "app"
-var app = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)(_components_Popup_vue__WEBPACK_IMPORTED_MODULE_1__["default"]);
-app.mount("#app");
+(0, vue_1.createApp)(Popup_vue_1["default"]).mount("#app");
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./assets/js/components/Popup.vue?vue&type=script&lang=js":
-/*!********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./assets/js/components/Popup.vue?vue&type=script&lang=js ***!
-  \********************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/ts-loader/index.js??clonedRuleSet-6!./node_modules/ts-loader/index.js??clonedRuleSet-23!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./assets/js/components/Popup.vue?vue&type=script&setup=true&lang=ts":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/ts-loader/index.js??clonedRuleSet-6!./node_modules/ts-loader/index.js??clonedRuleSet-23!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./assets/js/components/Popup.vue?vue&type=script&setup=true&lang=ts ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  data: function data() {
-    return {
-      atcive: true
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+var vue_2 = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+var vue_3 = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+exports["default"] = (0, vue_2.defineComponent)({
+  name: 'Popup',
+  setup: function setup(__props, _a) {
+    var expose = _a.expose;
+    expose();
+    var atcive = (0, vue_3.ref)(true);
+    var theTitle = (0, vue_3.ref)("My little title");
+    var __returned__ = {
+      atcive: atcive,
+      theTitle: theTitle
     };
+    Object.defineProperty(__returned__, '__isScriptSetup', {
+      enumerable: false,
+      value: true
+    });
+    return __returned__;
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./assets/js/components/Popup.vue?vue&type=template&id=a8fbc54a":
-/*!************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./assets/js/components/Popup.vue?vue&type=template&id=a8fbc54a ***!
-  \************************************************************************************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/ts-loader/index.js??clonedRuleSet-6!./node_modules/ts-loader/index.js??clonedRuleSet-23!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./assets/js/components/Popup.vue?vue&type=template&id=a8fbc54a&ts=true":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/ts-loader/index.js??clonedRuleSet-6!./node_modules/ts-loader/index.js??clonedRuleSet-23!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./assets/js/components/Popup.vue?vue&type=template&id=a8fbc54a&ts=true ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   render: () => (/* binding */ render)
-/* harmony export */ });
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.render = void 0;
+var vue_2 = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 var _hoisted_1 = {
   "class": "wrapper"
 };
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
+var _hoisted_2 = /*#__PURE__*/(0, vue_2.createElementVNode)("h1", {
   "class": "title"
 }, "Hello World Notes", -1 /* HOISTED */);
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+var _hoisted_3 = /*#__PURE__*/(0, vue_2.createElementVNode)("div", {
   "class": "buttons"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+}, [/*#__PURE__*/(0, vue_2.createElementVNode)("button", {
   type: "button",
   "class": "state-off"
-}, "Btn1"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+}, "Btn1"), /*#__PURE__*/(0, vue_2.createElementVNode)("button", {
   type: "button",
   "class": "state-on"
 }, "Btn1")], -1 /* HOISTED */);
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+var _hoisted_4 = {
   "class": "sites"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "My little notes"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("textarea", {
+};
+var _hoisted_5 = /*#__PURE__*/(0, vue_2.createElementVNode)("textarea", {
   rows: "8",
   autocomplete: "off",
   autocorrect: "off",
   autocapitalize: "off",
   spellcheck: "false"
-})], -1 /* HOISTED */);
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+}, null, -1 /* HOISTED */);
+var _hoisted_6 = /*#__PURE__*/(0, vue_2.createElementVNode)("button", {
   type: "button",
   "class": "state-save"
 }, "Example Submit Button", -1 /* HOISTED */);
-var _hoisted_6 = [_hoisted_2, _hoisted_3, _hoisted_4, _hoisted_5];
-function render(_ctx, _cache) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, _hoisted_6);
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return (0, vue_2.openBlock)(), (0, vue_2.createElementBlock)("div", _hoisted_1, [_hoisted_2, _hoisted_3, (0, vue_2.createElementVNode)("div", _hoisted_4, [(0, vue_2.createElementVNode)("p", null, (0, vue_2.toDisplayString)($setup.theTitle), 1 /* TEXT */), _hoisted_5]), _hoisted_6]);
 }
+exports.render = render;
 
 /***/ }),
 
@@ -17535,17 +17551,18 @@ exports["default"] = (sfc, props) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   __esModule: () => (/* reexport safe */ _Popup_vue_vue_type_script_setup_true_lang_ts__WEBPACK_IMPORTED_MODULE_1__.__esModule),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Popup_vue_vue_type_template_id_a8fbc54a__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Popup.vue?vue&type=template&id=a8fbc54a */ "./assets/js/components/Popup.vue?vue&type=template&id=a8fbc54a");
-/* harmony import */ var _Popup_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Popup.vue?vue&type=script&lang=js */ "./assets/js/components/Popup.vue?vue&type=script&lang=js");
+/* harmony import */ var _Popup_vue_vue_type_template_id_a8fbc54a_ts_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Popup.vue?vue&type=template&id=a8fbc54a&ts=true */ "./assets/js/components/Popup.vue?vue&type=template&id=a8fbc54a&ts=true");
+/* harmony import */ var _Popup_vue_vue_type_script_setup_true_lang_ts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Popup.vue?vue&type=script&setup=true&lang=ts */ "./assets/js/components/Popup.vue?vue&type=script&setup=true&lang=ts");
 /* harmony import */ var _home_matt_Documents_Git_swarmCS_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_home_matt_Documents_Git_swarmCS_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Popup_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Popup_vue_vue_type_template_id_a8fbc54a__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"assets/js/components/Popup.vue"]])
+const __exports__ = /*#__PURE__*/(0,_home_matt_Documents_Git_swarmCS_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Popup_vue_vue_type_script_setup_true_lang_ts__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Popup_vue_vue_type_template_id_a8fbc54a_ts_true__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"assets/js/components/Popup.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -17554,32 +17571,34 @@ if (false) {}
 
 /***/ }),
 
-/***/ "./assets/js/components/Popup.vue?vue&type=script&lang=js":
-/*!****************************************************************!*\
-  !*** ./assets/js/components/Popup.vue?vue&type=script&lang=js ***!
-  \****************************************************************/
+/***/ "./assets/js/components/Popup.vue?vue&type=script&setup=true&lang=ts":
+/*!***************************************************************************!*\
+  !*** ./assets/js/components/Popup.vue?vue&type=script&setup=true&lang=ts ***!
+  \***************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Popup_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */   __esModule: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_ts_loader_index_js_clonedRuleSet_6_node_modules_ts_loader_index_js_clonedRuleSet_23_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Popup_vue_vue_type_script_setup_true_lang_ts__WEBPACK_IMPORTED_MODULE_0__.__esModule),
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_ts_loader_index_js_clonedRuleSet_6_node_modules_ts_loader_index_js_clonedRuleSet_23_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Popup_vue_vue_type_script_setup_true_lang_ts__WEBPACK_IMPORTED_MODULE_0__["default"])
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Popup_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Popup.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./assets/js/components/Popup.vue?vue&type=script&lang=js");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_ts_loader_index_js_clonedRuleSet_6_node_modules_ts_loader_index_js_clonedRuleSet_23_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Popup_vue_vue_type_script_setup_true_lang_ts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/ts-loader/index.js??clonedRuleSet-6!../../../node_modules/ts-loader/index.js??clonedRuleSet-23!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Popup.vue?vue&type=script&setup=true&lang=ts */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/ts-loader/index.js??clonedRuleSet-6!./node_modules/ts-loader/index.js??clonedRuleSet-23!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./assets/js/components/Popup.vue?vue&type=script&setup=true&lang=ts");
  
 
 /***/ }),
 
-/***/ "./assets/js/components/Popup.vue?vue&type=template&id=a8fbc54a":
-/*!**********************************************************************!*\
-  !*** ./assets/js/components/Popup.vue?vue&type=template&id=a8fbc54a ***!
-  \**********************************************************************/
+/***/ "./assets/js/components/Popup.vue?vue&type=template&id=a8fbc54a&ts=true":
+/*!******************************************************************************!*\
+  !*** ./assets/js/components/Popup.vue?vue&type=template&id=a8fbc54a&ts=true ***!
+  \******************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Popup_vue_vue_type_template_id_a8fbc54a__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */   __esModule: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_ts_loader_index_js_clonedRuleSet_6_node_modules_ts_loader_index_js_clonedRuleSet_23_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_4_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Popup_vue_vue_type_template_id_a8fbc54a_ts_true__WEBPACK_IMPORTED_MODULE_0__.__esModule),
+/* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_ts_loader_index_js_clonedRuleSet_6_node_modules_ts_loader_index_js_clonedRuleSet_23_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_4_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Popup_vue_vue_type_template_id_a8fbc54a_ts_true__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Popup_vue_vue_type_template_id_a8fbc54a__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Popup.vue?vue&type=template&id=a8fbc54a */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./assets/js/components/Popup.vue?vue&type=template&id=a8fbc54a");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_ts_loader_index_js_clonedRuleSet_6_node_modules_ts_loader_index_js_clonedRuleSet_23_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_4_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Popup_vue_vue_type_template_id_a8fbc54a_ts_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/ts-loader/index.js??clonedRuleSet-6!../../../node_modules/ts-loader/index.js??clonedRuleSet-23!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Popup.vue?vue&type=template&id=a8fbc54a&ts=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/ts-loader/index.js??clonedRuleSet-6!./node_modules/ts-loader/index.js??clonedRuleSet-23!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[4]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./assets/js/components/Popup.vue?vue&type=template&id=a8fbc54a&ts=true");
 
 
 /***/ }),
@@ -17974,7 +17993,7 @@ function compileToFunction(template, options) {
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["dist/css/popup"], () => (__webpack_require__("./assets/js/popup.js")))
+/******/ 	__webpack_require__.O(undefined, ["dist/css/popup"], () => (__webpack_require__("./assets/js/popup.ts")))
 /******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["dist/css/popup"], () => (__webpack_require__("./assets/sass/popup.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	

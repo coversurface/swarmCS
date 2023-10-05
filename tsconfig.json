@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["assets/js/components"]
+    }
+  },
+  "include": [
+    "assets/js/**/*.ts",
+    "assets/js/**/*.d.ts",
+    "assets/js/**/*.tsx",
+    "assets/js/**/*.vue"
+  ],
+  "exclude": ["./node_modules"]
+}
