@@ -1,5 +1,7 @@
 {
     "/dist/js/popup.js": "/dist/js/popup.js",
+    "/dist/js/dashboard.js": "/dist/js/dashboard.js",
+    "/dist/css/dashboard.css": "/dist/css/dashboard.css",
     "/dist/css/popup.css": "/dist/css/popup.css",
     "/dist/images/Info_icon.svg": "/dist/images/Info_icon.svg",
     "/dist/images/On_button_icon.svg": "/dist/images/On_button_icon.svg",

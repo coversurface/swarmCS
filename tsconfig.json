@@ -10,7 +10,6 @@
     "assets/js/**/*.d.ts",
     "assets/js/**/*.tsx",
     "assets/js/**/*.vue",
-    "assets/js/background.ts",
     "assets/chromeDecls/chrome.d.ts",
     "assets/chromeDecls/chrome-runtime.d.ts"
   ],

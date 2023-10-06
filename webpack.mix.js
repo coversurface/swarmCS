@@ -10,7 +10,9 @@ mix
   .setPublicPath("./")
   .alias(alias)
   .ts("assets/js/popup.ts", "dist/js")
+  .ts("assets/js/dashboard.ts", "dist/js")
   .sass("assets/sass/popup.scss", "dist/css")
+  .sass("assets/sass/dashboard.scss", "dist/css")
   .copy("assets/images/", "dist/images")
   .options({
     processCssUrls: false,
