@@ -1,15 +1,26 @@
 {
   "name": "swarmCS",
+  "short_name": "cs",
   "version": "0.1.0",
-  "description": "A very basic extension to quickly block or allow a list",
-  "host_permissions": ["http://*/", "https://*/"],
+  "manifest_version": 3,
+  "permissions": [
+    "webRequest",
+    "declarativeNetRequest",
+    "tabs",
+    "storage",
+    "webNavigation"
+  ],
+  "author": "r4nd3l",
+  "description": "demo extension of swarmCS",
   "icons": {
     "16": "images/icon-16x16.png",
     "48": "images/icon-48x48.png",
     "128": "images/icon-128x128.png"
   },
   "action": {
-    "default_popup": "popup.html"
+    "default_title": "swarmCS",
+    "default_popup": "popup.html",
+    "dashboard": "dashboard.html"
   },
-  "manifest_version": 3
+  "host_permissions": ["*://*/"]
 }

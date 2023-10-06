@@ -41,12 +41,14 @@
       </div>
     </div>
     <div class="col-span-12 flex flex-col justify-center items-center py-2">
-      <button
-        class="flex flex-row justify-evenly items-center w-3/5 mx-4 py-1 rounded-md bg-gray-100 hover:bg-[#f9ceb2]"
-      >
-        <img src="./../../images/surface_icon.svg" alt="surface_icon" />
-        <h1 class="text-gray-800 font-bold">My Surface</h1>
-      </button>
+      <a @click="openDashboard" class="flex justify-center w-full">
+        <button
+          class="flex flex-row justify-evenly items-center w-3/5 mx-4 py-1 rounded-md bg-gray-100 hover:bg-[#f9ceb2]"
+        >
+          <img src="./../../images/surface_icon.svg" alt="surface_icon" />
+          <h1 class="text-gray-800 font-bold">My Surface</h1>
+        </button>
+      </a>
     </div>
   </div>
 </template>
@@ -56,4 +58,14 @@ import { ref } from "vue";
 
 const atcive = ref<boolean>(true);
 const theTitle = ref<string>("My little title");
+
+const openDashboard = () => {
+  console.log("hola");
+  // Specify the URL to your dashboard HTML page
+
+  const dashboardUrl = chrome.runtime.getURL("dashboard.html");
+
+  // Use the chrome.tabs.create API to open a new tab with the specified URL
+  chrome.tabs.create({ url: dashboardUrl });
+};
 </script>
