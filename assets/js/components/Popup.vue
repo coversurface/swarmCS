@@ -2,7 +2,7 @@
   <div class="grid-col-12">
     <div class="col-span-12 flex flex-row justify-center items-center my-2">
       <img
-        src="./../../images/icon-128x128.png"
+        src="images/icon-128x128.png"
         class="h-12 w-auto rounded-lg"
         alt="logo"
       />
@@ -15,13 +15,13 @@
       class="col-span-12 flex flex-row justify-center items-center gap-x-2 mb-2"
     >
       <span class="cursor-pointer rounded-md hover:bg-[#f9ceb2] p-1"
-        ><img src="./../../images/Info_icon.svg" alt="info_icon"
+        ><img src="images/Info_icon.svg" alt="info_icon"
       /></span>
       <span class="cursor-pointer rounded-md hover:bg-[#f9ceb2] p-1"
-        ><img src="./../../images/On_button_icon.svg" alt="on_icon"
+        ><img src="images/On_button_icon.svg" alt="on_icon"
       /></span>
       <span class="cursor-pointer rounded-md hover:bg-[#f9ceb2] p-1"
-        ><img src="./../../images/Setting_line.svg" alt="settings_icon"
+        ><img src="images/Setting_line.svg" alt="settings_icon"
       /></span>
     </div>
     <div
@@ -45,7 +45,7 @@
         <button
           class="flex flex-row justify-evenly items-center w-3/5 mx-4 py-1 rounded-md bg-gray-100 hover:bg-[#f9ceb2]"
         >
-          <img src="./../../images/surface_icon.svg" alt="surface_icon" />
+          <img src="images/surface_icon.svg" alt="surface_icon" />
           <h1 class="text-gray-800 font-bold">My Surface</h1>
         </button>
       </a>
@@ -54,11 +54,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
-
-const atcive = ref<boolean>(true);
-const theTitle = ref<string>("My little title");
-
 const openDashboard = () => {
   console.log("hola");
   // Specify the URL to your dashboard HTML page

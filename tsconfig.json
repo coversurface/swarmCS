@@ -2,16 +2,14 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@/*": ["assets/js/components"]
+      "@/*": ["assets/js/components/*"]
     }
   },
   "include": [
     "assets/js/**/*.ts",
-    "assets/js/**/*.d.ts",
+    "assets/**/*.d.ts",
     "assets/js/**/*.tsx",
-    "assets/js/**/*.vue",
-    "assets/chromeDecls/chrome.d.ts",
-    "assets/chromeDecls/chrome-runtime.d.ts"
+    "assets/js/**/*.vue"
   ],
   "exclude": ["./node_modules"]
 }

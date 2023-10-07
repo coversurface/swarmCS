@@ -9,7 +9,7 @@
     "watch": "npm run local -- --watch"
   },
   "devDependencies": {
-    "@types/node": "^20.8.2",
+    "@types/node": "^20.8.3",
     "@types/vue": "^2.0.0",
     "cross-env": "^7.0.3",
     "laravel-mix": "^6.0.49",

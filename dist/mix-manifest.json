@@ -1,0 +1,13 @@
+{
+    "/js/popup.js": "/js/popup.js",
+    "/js/dashboard.js": "/js/dashboard.js",
+    "/css/dashboard.css": "/css/dashboard.css",
+    "/css/popup.css": "/css/popup.css",
+    "/images/Info_icon.svg": "/images/Info_icon.svg",
+    "/images/On_button_icon.svg": "/images/On_button_icon.svg",
+    "/images/Setting_line.svg": "/images/Setting_line.svg",
+    "/images/icon-128x128.png": "/images/icon-128x128.png",
+    "/images/icon-16x16.png": "/images/icon-16x16.png",
+    "/images/icon-48x48.png": "/images/icon-48x48.png",
+    "/images/surface_icon.svg": "/images/surface_icon.svg"
+}

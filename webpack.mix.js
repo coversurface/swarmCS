@@ -1,4 +1,4 @@
-const mix = require("laravel-mix");
+let mix = require("laravel-mix");
 const path = require("path");
 
 const alias = {
@@ -7,10 +7,10 @@ const alias = {
 
 mix
   .vue()
-  .setPublicPath("./")
+  .setPublicPath("dist")
   .alias(alias)
-  .ts("assets/js/popup.ts", "dist/js")
-  .ts("assets/js/dashboard.ts", "dist/js")
+  .js("assets/js/popup.ts", "dist/js")
+  .js("assets/js/dashboard.ts", "dist/js")
   .sass("assets/sass/popup.scss", "dist/css")
   .sass("assets/sass/dashboard.scss", "dist/css")
   .copy("assets/images/", "dist/images")
