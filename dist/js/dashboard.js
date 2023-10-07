@@ -17420,14 +17420,14 @@ function genPropsAccessExp(name) {
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
-var vue_5 = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-var vue_6 = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-exports["default"] = (0, vue_5.defineComponent)({
+var vue_3 = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+var vue_4 = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+exports["default"] = (0, vue_3.defineComponent)({
   name: 'Dashboard',
   setup: function setup(__props, _a) {
     var expose = _a.expose;
     expose();
-    var mytitle = (0, vue_6.ref)("My little dashboard");
+    var mytitle = (0, vue_4.ref)("My little dashboard");
     var __returned__ = {
       mytitle: mytitle
     };
@@ -17453,18 +17453,21 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 exports.render = void 0;
-var vue_4 = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+var vue_3 = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 var _hoisted_1 = {
   "class": "grid-col-12"
 };
 var _hoisted_2 = {
   "class": "col-span-12"
 };
-var _hoisted_3 = {
+var _hoisted_3 = /*#__PURE__*/(0, vue_3.createElementVNode)("h1", {
+  "class": "border border-red-500"
+}, "My little dashboard", -1 /* HOISTED */);
+var _hoisted_4 = {
   "class": "border border-red-500"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0, vue_4.openBlock)(), (0, vue_4.createElementBlock)("div", _hoisted_1, [(0, vue_4.createElementVNode)("div", _hoisted_2, [(0, vue_4.createElementVNode)("h1", _hoisted_3, (0, vue_4.toDisplayString)($setup.mytitle), 1 /* TEXT */)])]);
+  return (0, vue_3.openBlock)(), (0, vue_3.createElementBlock)("div", _hoisted_1, [(0, vue_3.createElementVNode)("div", _hoisted_2, [_hoisted_3, (0, vue_3.createElementVNode)("h1", _hoisted_4, (0, vue_3.toDisplayString)($setup.mytitle), 1 /* TEXT */)])]);
 }
 
 exports.render = render;
@@ -18283,11 +18286,11 @@ var exports = __webpack_exports__;
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
-var vue_2 = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+var vue_1 = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 __webpack_require__(/*! ./../css/tailwind.css */ "./assets/css/tailwind.css");
 var Dashboard_vue_1 = __webpack_require__(/*! ./components/Dashboard.vue */ "./assets/js/components/Dashboard.vue");
 // Create a new Vue 3 app instance and mount it to an element with the ID "app"
-(0, vue_2.createApp)(Dashboard_vue_1["default"]).mount("#dashboard");
+(0, vue_1.createApp)(Dashboard_vue_1["default"]).mount("#dashboard");
 })();
 
 /******/ })()

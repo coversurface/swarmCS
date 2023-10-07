@@ -17420,11 +17420,11 @@ function genPropsAccessExp(name) {
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
-var vue_1 = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+var vue_2 = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 __webpack_require__(/*! ./../css/tailwind.css */ "./assets/css/tailwind.css");
 var Popup_vue_1 = __webpack_require__(/*! ./components/Popup.vue */ "./assets/js/components/Popup.vue");
 // Create a new Vue 3 app instance and mount it to an element with the ID "app"
-(0, vue_1.createApp)(Popup_vue_1["default"]).mount("#app");
+(0, vue_2.createApp)(Popup_vue_1["default"]).mount("#app");
 
 /***/ }),
 
@@ -17439,15 +17439,15 @@ var Popup_vue_1 = __webpack_require__(/*! ./components/Popup.vue */ "./assets/js
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
-var vue_3 = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-var vue_4 = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-exports["default"] = (0, vue_3.defineComponent)({
+var vue_5 = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+var vue_6 = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+exports["default"] = (0, vue_5.defineComponent)({
   name: 'Popup',
   setup: function setup(__props, _a) {
     var expose = _a.expose;
     expose();
-    var atcive = (0, vue_4.ref)(true);
-    var theTitle = (0, vue_4.ref)("My little title");
+    var atcive = (0, vue_6.ref)(true);
+    var theTitle = (0, vue_6.ref)("My little title");
     var openDashboard = function openDashboard() {
       console.log("hola");
       // Specify the URL to your dashboard HTML page
@@ -17484,7 +17484,7 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 exports.render = void 0;
-var vue_3 = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+var vue_5 = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 var icon_128x128_png_1 = __webpack_require__(/*! ./../../images/icon-128x128.png */ "./assets/images/icon-128x128.png");
 var Info_icon_svg_1 = __webpack_require__(/*! ./../../images/Info_icon.svg */ "./assets/images/Info_icon.svg");
 var On_button_icon_svg_1 = __webpack_require__(/*! ./../../images/On_button_icon.svg */ "./assets/images/On_button_icon.svg");
@@ -17493,20 +17493,20 @@ var surface_icon_svg_1 = __webpack_require__(/*! ./../../images/surface_icon.svg
 var _hoisted_1 = {
   "class": "grid-col-12"
 };
-var _hoisted_2 = /*#__PURE__*/(0, vue_3.createStaticVNode)("<div class=\"col-span-12 flex flex-row justify-center items-center my-2\"><img src=\"" + icon_128x128_png_1["default"] + "\" class=\"h-12 w-auto rounded-lg\" alt=\"logo\"><div class=\"flex flex-col items-start ml-2\"><h1 class=\"text-gray-800 font-bold\">CoverSurface v1.0</h1><small class=\"text-gray-400 font-bold\">Copyright - 2023</small></div></div><div class=\"col-span-12 flex flex-row justify-center items-center gap-x-2 mb-2\"><span class=\"cursor-pointer rounded-md hover:bg-[#f9ceb2] p-1\"><img src=\"" + Info_icon_svg_1["default"] + "\" alt=\"info_icon\"></span><span class=\"cursor-pointer rounded-md hover:bg-[#f9ceb2] p-1\"><img src=\"" + On_button_icon_svg_1["default"] + "\" alt=\"on_icon\"></span><span class=\"cursor-pointer rounded-md hover:bg-[#f9ceb2] p-1\"><img src=\"" + Setting_line_svg_1["default"] + "\" alt=\"settings_icon\"></span></div><div class=\"col-span-12 flex flex-col justify-center items-center py-2 px-5 border-gray-400 border-y\"><div class=\"flex flex-row justify-between w-full mx-2\"><p class=\"text-gray-400 font-bold\">Nodes/Peers</p><p class=\"text-gray-800 font-bold\">576</p></div><div class=\"flex flex-row justify-between w-full mx-2\"><p class=\"text-gray-400 font-bold\">Gateway</p><p class=\"text-gray-800 font-bold\">localhost:3054</p></div><div class=\"flex flex-row justify-between w-full mx-2\"><p class=\"text-gray-400 font-bold\">API</p><p class=\"text-gray-800 font-bold\">127.0.0.1:1633</p></div></div>", 3);
-var _hoisted_5 = /*#__PURE__*/(0, vue_3.createElementVNode)("button", {
+var _hoisted_2 = /*#__PURE__*/(0, vue_5.createStaticVNode)("<div class=\"col-span-12 flex flex-row justify-center items-center my-2\"><img src=\"" + icon_128x128_png_1["default"] + "\" class=\"h-12 w-auto rounded-lg\" alt=\"logo\"><div class=\"flex flex-col items-start ml-2\"><h1 class=\"text-gray-800 font-bold\">CoverSurface v1.0</h1><small class=\"text-gray-400 font-bold\">Copyright - 2023</small></div></div><div class=\"col-span-12 flex flex-row justify-center items-center gap-x-2 mb-2\"><span class=\"cursor-pointer rounded-md hover:bg-[#f9ceb2] p-1\"><img src=\"" + Info_icon_svg_1["default"] + "\" alt=\"info_icon\"></span><span class=\"cursor-pointer rounded-md hover:bg-[#f9ceb2] p-1\"><img src=\"" + On_button_icon_svg_1["default"] + "\" alt=\"on_icon\"></span><span class=\"cursor-pointer rounded-md hover:bg-[#f9ceb2] p-1\"><img src=\"" + Setting_line_svg_1["default"] + "\" alt=\"settings_icon\"></span></div><div class=\"col-span-12 flex flex-col justify-center items-center py-2 px-5 border-gray-400 border-y\"><div class=\"flex flex-row justify-between w-full mx-2\"><p class=\"text-gray-400 font-bold\">Nodes/Peers</p><p class=\"text-gray-800 font-bold\">576</p></div><div class=\"flex flex-row justify-between w-full mx-2\"><p class=\"text-gray-400 font-bold\">Gateway</p><p class=\"text-gray-800 font-bold\">localhost:3054</p></div><div class=\"flex flex-row justify-between w-full mx-2\"><p class=\"text-gray-400 font-bold\">API</p><p class=\"text-gray-800 font-bold\">127.0.0.1:1633</p></div></div>", 3);
+var _hoisted_5 = /*#__PURE__*/(0, vue_5.createElementVNode)("button", {
   "class": "flex flex-row justify-evenly items-center w-3/5 mx-4 py-1 rounded-md bg-gray-100 hover:bg-[#f9ceb2]"
-}, [/*#__PURE__*/(0, vue_3.createElementVNode)("img", {
+}, [/*#__PURE__*/(0, vue_5.createElementVNode)("img", {
   src: surface_icon_svg_1["default"],
   alt: "surface_icon"
-}), /*#__PURE__*/(0, vue_3.createElementVNode)("h1", {
+}), /*#__PURE__*/(0, vue_5.createElementVNode)("h1", {
   "class": "text-gray-800 font-bold"
 }, "My Surface")], -1 /* HOISTED */);
 var _hoisted_6 = [_hoisted_5];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0, vue_3.openBlock)(), (0, vue_3.createElementBlock)("div", _hoisted_1, [_hoisted_2, (0, vue_3.createElementVNode)("div", {
+  return (0, vue_5.openBlock)(), (0, vue_5.createElementBlock)("div", _hoisted_1, [_hoisted_2, (0, vue_5.createElementVNode)("div", {
     "class": "col-span-12 flex flex-col justify-center items-center py-2"
-  }, [(0, vue_3.createElementVNode)("a", {
+  }, [(0, vue_5.createElementVNode)("a", {
     onClick: $setup.openDashboard,
     "class": "flex justify-center w-full"
   }, _hoisted_6)])]);
