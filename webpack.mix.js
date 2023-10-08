@@ -33,3 +33,16 @@ mix.webpackConfig({
     ],
   },
 });
+
+// "scripts": {
+//   "dev": "webpack serve --mode development --hot --config=node_modules/laravel-mix/setup/webpack.config.js"
+// },
+
+// if (process.env.NODE_ENV === "development") {
+//   mix.webpackConfig({
+//     devServer: {
+//       contentBase: path.resolve(__dirname, "dist"), // Serve files from the dist directory
+//       watchContentBase: true, // Watch for changes in the served files
+//     },
+//   });
+// }

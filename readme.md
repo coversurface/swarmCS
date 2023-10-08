@@ -6,12 +6,14 @@
     $ npm run dev
 ```
 
-# Refresh the extension in the browser window
-
----
-
-# Experiment to recreate the dist folder
+# Dev server
 
 ```bash
-    $ npm run local
+    $ npm run local -- --watch
+```
+
+# Live dev server
+
+```bash
+    $ npm run local -- --watch
 ```

@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .cs-gray {
+    filter: invert(96%) sepia(0%) saturate(205%) hue-rotate(163deg)
+      brightness(87%) contrast(90%);
+  }
+  .cs-dark {
+    filter: invert(17%) sepia(6%) saturate(1244%) hue-rotate(187deg)
+      brightness(102%) contrast(88%);
+  }
+
+  .cs-hover:hover > img {
+    filter: invert(17%) sepia(6%) saturate(1244%) hue-rotate(187deg)
+      brightness(102%) contrast(88%);
+  }
+}
