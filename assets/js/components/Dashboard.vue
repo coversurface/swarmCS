@@ -26,7 +26,7 @@
             >{{ sectionOverview }}</small
           >
           <div
-            @click="showPage = 1"
+            @click="changeComponent(1)"
             class="flex flex-row justify-start items-center rounded-lg cs-hover cursor-pointer hover:bg-orange-200 text-gray-800"
           >
             <img
@@ -38,7 +38,7 @@
             </h1>
           </div>
           <div
-            @click="showPage = 2"
+            @click="changeComponent(2)"
             class="flex flex-row justify-start items-center rounded-lg cs-hover cursor-pointer hover:bg-orange-200 text-gray-800"
           >
             <img
@@ -50,7 +50,7 @@
             </h1>
           </div>
           <div
-            @click="showPage = 3"
+            @click="changeComponent(3)"
             class="flex flex-row justify-start items-center rounded-lg cs-hover cursor-pointer hover:bg-orange-200 text-gray-800"
           >
             <img
@@ -62,7 +62,7 @@
             </h1>
           </div>
           <div
-            @click="showPage = 4"
+            @click="changeComponent(4)"
             class="flex flex-row justify-start items-center rounded-lg cs-hover cursor-pointer hover:bg-orange-200 text-gray-800"
           >
             <img
@@ -84,7 +84,7 @@
             >{{ sectionAccount }}</small
           >
           <div
-            @click="showPage = 5"
+            @click="changeComponent(5)"
             class="flex flex-row justify-start items-center rounded-lg cs-hover cursor-pointer hover:bg-orange-200 text-gray-800"
           >
             <img src="images/chat_icon.svg" class="h-10 w-auto p-2 cs-gray" />
@@ -93,7 +93,7 @@
             </h1>
           </div>
           <div
-            @click="showPage = 6"
+            @click="changeComponent(6)"
             class="flex flex-row justify-start items-center rounded-lg cs-hover cursor-pointer hover:bg-orange-200 text-gray-800"
           >
             <img
@@ -105,7 +105,7 @@
             </h1>
           </div>
           <div
-            @click="showPage = 7"
+            @click="changeComponent(7)"
             class="flex flex-row justify-start items-center rounded-lg cs-hover cursor-pointer hover:bg-orange-200 text-gray-800"
           >
             <img src="images/login_icon.svg" class="h-10 w-auto p-2 cs-gray" />
@@ -136,29 +136,24 @@
         </div>
       </div>
     </div>
-    <div class="grid grid-col-12">
-      <div class="col-span-12">
-        <div v-show="showPage === 1"><mainDashboard /></div>
-        <div v-show="showPage === 2"><mainServices /></div>
-        <div v-show="showPage === 3"><mainNotifications /></div>
-        <div v-show="showPage === 4"><mainEvent /></div>
-        <div v-show="showPage === 5"><mainChat /></div>
-        <div v-show="showPage === 6"><mainSettings /></div>
-        <div v-show="showPage === 7"><mainLogin /></div>
-      </div>
-    </div>
+    <transition name="fade" mode="out-in">
+      <component
+        :is="currentComponent"
+        class="flex flex-col h-full items-center justify-between w-full"
+      ></component>
+    </transition>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref } from "vue";
-import mainDashboard from "./pages/mainDashboard.vue";
-import mainServices from "./pages/mainServices.vue";
-import mainNotifications from "./pages/mainNotifications.vue";
-import mainEvent from "./pages/mainEvent.vue";
-import mainChat from "./pages/mainChat.vue";
-import mainSettings from "./pages/mainSettings.vue";
-import mainLogin from "./pages/mainLogin.vue";
+import MainDashboard from "./pages/MainDashboard.vue";
+import MainServices from "./pages/MainServices.vue";
+import MainNotifications from "./pages/MainNotifications.vue";
+import MainEvent from "./pages/MainEvent.vue";
+import MainChat from "./pages/MainChat.vue";
+import MainSettings from "./pages/MainSettings.vue";
+import MainLogin from "./pages/MainLogin.vue";
 
 const profileName = ref<string>("John Doe");
 const profileEmail = ref<string>("john.doe@mail.com");
@@ -173,13 +168,51 @@ const sectionAccount = ref<string>("Account");
 const menuChat = ref<string>("Chat");
 const menuSettings = ref<string>("Settings");
 const menuLogin = ref<string>("Login");
-const brandName = ref<string>("CoverSurface v1");
+const brandName = ref<string>("CoverSurface");
 const brandCopyright = ref<string>("Copyright - 2023");
 
-const showPage = ref<number>(1);
+const currentComponent = ref(MainDashboard);
+const changeComponent = (page: number) => {
+  switch (page) {
+    case 1:
+      currentComponent.value = MainDashboard;
+      break;
+    case 2:
+      currentComponent.value = MainServices;
+      break;
+    case 3:
+      currentComponent.value = MainNotifications;
+      break;
+    case 4:
+      currentComponent.value = MainEvent;
+      break;
+    case 5:
+      currentComponent.value = MainChat;
+      break;
+    case 6:
+      currentComponent.value = MainSettings;
+      break;
+    case 7:
+      currentComponent.value = MainLogin;
+      break;
+    default:
+      currentComponent.value = MainDashboard; // Default to MainDashboard
+  }
+};
 
 const sideBarSwtich = ref<boolean>(true);
 const sideBar = () => {
   sideBarSwtich.value = !sideBarSwtich.value;
 };
 </script>
+
+<style lang="scss" scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>
