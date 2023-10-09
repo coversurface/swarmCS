@@ -4,10 +4,12 @@
     "/css/dashboard.css": "/css/dashboard.css",
     "/css/popup.css": "/css/popup.css",
     "/images/3d_box_fill.svg": "/images/3d_box_fill.svg",
+    "/images/Close_round.svg": "/images/Close_round.svg",
     "/images/Event_log_icon.svg": "/images/Event_log_icon.svg",
     "/images/Info_icon.svg": "/images/Info_icon.svg",
     "/images/Notifications_icon.svg": "/images/Notifications_icon.svg",
     "/images/On_button_icon.svg": "/images/On_button_icon.svg",
+    "/images/Search.svg": "/images/Search.svg",
     "/images/Setting_line.svg": "/images/Setting_line.svg",
     "/images/Shop_icon.svg": "/images/Shop_icon.svg",
     "/images/User_icon.svg": "/images/User_icon.svg",
@@ -24,5 +26,8 @@
     "/images/settings_icon.svg": "/images/settings_icon.svg",
     "/images/surface_icon.svg": "/images/surface_icon.svg",
     "/images/switch_icon.svg": "/images/switch_icon.svg",
-    "/images/worldMap.svg": "/images/worldMap.svg"
+    "/images/worldMap.svg": "/images/worldMap.svg",
+    "/images/Widget_add.svg": "/images/Widget_add.svg",
+    "/images/Expand_down.svg": "/images/Expand_down.svg",
+    "/images/Bag.svg": "/images/Bag.svg"
 }

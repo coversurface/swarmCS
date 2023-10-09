@@ -137,10 +137,7 @@
       </div>
     </div>
     <transition name="fade" mode="out-in">
-      <component
-        :is="currentComponent"
-        class="flex flex-col h-full items-center justify-between w-full"
-      ></component>
+      <component :is="currentComponent"></component>
     </transition>
   </div>
 </template>
