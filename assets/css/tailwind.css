@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body,
+#dashboard {
+  height: 100%;
+}
+
 @layer utilities {
   .cs-gray {
     filter: invert(96%) sepia(0%) saturate(205%) hue-rotate(163deg)
