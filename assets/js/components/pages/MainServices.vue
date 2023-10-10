@@ -82,7 +82,7 @@
             />
             <div class="flex flex-col justify-center items-start w-full">
               <div class="flex flex-row justify-between items-center w-full">
-                <h1 class="text-gray-800 font-bold">Daccounting service</h1>
+                <h1 class="text-gray-800 font-bold">Đaccounting service</h1>
                 <p class="text-gray-400 mx-4">3.9k</p>
               </div>
               <p class="text-gray-400">John Doe Inc</p>

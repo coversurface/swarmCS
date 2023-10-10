@@ -17,6 +17,10 @@ body,
     filter: invert(17%) sepia(6%) saturate(1244%) hue-rotate(187deg)
       brightness(102%) contrast(88%);
   }
+  .cs-orange {
+    filter: invert(81%) sepia(43%) saturate(4943%) hue-rotate(332deg)
+      brightness(102%) contrast(97%);
+  }
 
   .cs-hover:hover > img {
     filter: invert(17%) sepia(6%) saturate(1244%) hue-rotate(187deg)

@@ -27,7 +27,7 @@
           >
           <div
             @click="changeComponent(1)"
-            class="flex flex-row justify-start items-center rounded-lg cs-hover cursor-pointer hover:bg-orange-200 text-gray-800"
+            class="flex flex-row justify-start items-center rounded-lg cs-hover cursor-pointer hover:bg-orange-200 text-gray-800 relative"
           >
             <img
               src="images/dashboard_icon.svg"
@@ -37,21 +37,49 @@
               {{ menuDashboard }}
             </h1>
           </div>
-          <div
-            @click="changeComponent(2)"
-            class="flex flex-row justify-start items-center rounded-lg cs-hover cursor-pointer hover:bg-orange-200 text-gray-800"
-          >
-            <img
-              src="images/services_icon.svg"
-              class="h-10 w-auto p-2 cs-gray"
-            />
-            <h1 class="font-medium mr-4" v-show="sideBarSwtich">
-              {{ menuServices }}
-            </h1>
+          <div class="flex flex-col justify-start items-start">
+            <div
+              @click="changeComponent(2)"
+              class="flex flex-row justify-start items-center rounded-lg cs-hover cursor-pointer hover:bg-orange-200 text-gray-800 relative"
+            >
+              <img
+                @click="subServices"
+                :src="
+                  subServicesSwtich === true
+                    ? 'images/Expand_down.svg'
+                    : 'images/Expand_right.svg'
+                "
+                class="h-10 w-auto p-2 cs-gray absolute -ml-7 cursor-pointer"
+                :class="sideBarSwtich === true ? 'visible' : 'invisible'"
+              />
+              <img
+                src="images/services_icon.svg"
+                class="h-10 w-auto p-2 cs-gray"
+              />
+              <h1 class="font-medium mr-4" v-show="sideBarSwtich">
+                {{ menuServices }}
+              </h1>
+            </div>
+            <ul v-show="sideBarSwtich && subServicesSwtich">
+              <li
+                @click="changeComponent(8)"
+                class="flex flex-row justify-start items-center rounded-lg cs-hover cursor-pointer hover:bg-orange-200 text-gray-800"
+              >
+                <img src="images/dot_icon.svg" class="h-8 w-auto p-1 cs-gray" />
+                <h1 class="font-medium mr-4">{{ subMenu_1 }}</h1>
+              </li>
+              <li
+                @click="changeComponent(9)"
+                class="flex flex-row justify-start items-center rounded-lg cs-hover cursor-pointer hover:bg-orange-200 text-gray-800"
+              >
+                <img src="images/dot_icon.svg" class="h-8 w-auto p-1 cs-gray" />
+                <h1 class="font-medium mr-4">{{ subMenu_2 }}</h1>
+              </li>
+            </ul>
           </div>
           <div
             @click="changeComponent(3)"
-            class="flex flex-row justify-start items-center rounded-lg cs-hover cursor-pointer hover:bg-orange-200 text-gray-800"
+            class="flex flex-row justify-start items-center rounded-lg cs-hover cursor-pointer hover:bg-orange-200 text-gray-800 relative"
           >
             <img
               src="images/messages_icon.svg"
@@ -63,7 +91,7 @@
           </div>
           <div
             @click="changeComponent(4)"
-            class="flex flex-row justify-start items-center rounded-lg cs-hover cursor-pointer hover:bg-orange-200 text-gray-800"
+            class="flex flex-row justify-start items-center rounded-lg cs-hover cursor-pointer hover:bg-orange-200 text-gray-800 relative"
           >
             <img
               src="images/event_log_icon.svg"
@@ -152,12 +180,19 @@ import MainChat from "./pages/MainChat.vue";
 import MainSettings from "./pages/MainSettings.vue";
 import MainLogin from "./pages/MainLogin.vue";
 
+import ServiceCoverSurface from "./pages/subServices/ServiceCoverSurface.vue";
+import ServiceDaccounting from "./pages/subServices/ServiceDaccounting.vue";
+
 const profileName = ref<string>("John Doe");
 const profileEmail = ref<string>("john.doe@mail.com");
 
 const sectionOverview = ref<string>("Overview");
 const menuDashboard = ref<string>("Dashboard");
 const menuServices = ref<string>("Services");
+
+const subMenu_1 = ref<string>("CoverSurface");
+const subMenu_2 = ref<string>("Đaccounting");
+
 const menuNotifications = ref<string>("Notifications");
 const menuEventlog = ref<string>("Eventlog");
 
@@ -192,6 +227,12 @@ const changeComponent = (page: number) => {
     case 7:
       currentComponent.value = MainLogin;
       break;
+    case 8:
+      currentComponent.value = ServiceCoverSurface;
+      break;
+    case 9:
+      currentComponent.value = ServiceDaccounting;
+      break;
     default:
       currentComponent.value = MainDashboard; // Default to MainDashboard
   }
@@ -200,6 +241,11 @@ const changeComponent = (page: number) => {
 const sideBarSwtich = ref<boolean>(true);
 const sideBar = () => {
   sideBarSwtich.value = !sideBarSwtich.value;
+};
+
+const subServicesSwtich = ref<boolean>(false);
+const subServices = () => {
+  subServicesSwtich.value = !subServicesSwtich.value;
 };
 </script>
 

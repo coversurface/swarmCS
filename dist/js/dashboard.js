@@ -17429,6 +17429,8 @@ var MainEvent_vue_1 = __webpack_require__(/*! ./pages/MainEvent.vue */ "./assets
 var MainChat_vue_1 = __webpack_require__(/*! ./pages/MainChat.vue */ "./assets/js/components/pages/MainChat.vue");
 var MainSettings_vue_1 = __webpack_require__(/*! ./pages/MainSettings.vue */ "./assets/js/components/pages/MainSettings.vue");
 var MainLogin_vue_1 = __webpack_require__(/*! ./pages/MainLogin.vue */ "./assets/js/components/pages/MainLogin.vue");
+var ServiceCoverSurface_vue_1 = __webpack_require__(/*! ./pages/subServices/ServiceCoverSurface.vue */ "./assets/js/components/pages/subServices/ServiceCoverSurface.vue");
+var ServiceDaccounting_vue_1 = __webpack_require__(/*! ./pages/subServices/ServiceDaccounting.vue */ "./assets/js/components/pages/subServices/ServiceDaccounting.vue");
 exports["default"] = (0, vue_1.defineComponent)({
   name: 'Dashboard',
   setup: function setup(__props, _a) {
@@ -17439,6 +17441,8 @@ exports["default"] = (0, vue_1.defineComponent)({
     var sectionOverview = (0, vue_2.ref)("Overview");
     var menuDashboard = (0, vue_2.ref)("Dashboard");
     var menuServices = (0, vue_2.ref)("Services");
+    var subMenu_1 = (0, vue_2.ref)("CoverSurface");
+    var subMenu_2 = (0, vue_2.ref)("Đaccounting");
     var menuNotifications = (0, vue_2.ref)("Notifications");
     var menuEventlog = (0, vue_2.ref)("Eventlog");
     var sectionAccount = (0, vue_2.ref)("Account");
@@ -17471,6 +17475,12 @@ exports["default"] = (0, vue_1.defineComponent)({
         case 7:
           currentComponent.value = MainLogin_vue_1["default"];
           break;
+        case 8:
+          currentComponent.value = ServiceCoverSurface_vue_1["default"];
+          break;
+        case 9:
+          currentComponent.value = ServiceDaccounting_vue_1["default"];
+          break;
         default:
           currentComponent.value = MainDashboard_vue_1["default"];
         // Default to MainDashboard
@@ -17481,12 +17491,18 @@ exports["default"] = (0, vue_1.defineComponent)({
     var sideBar = function sideBar() {
       sideBarSwtich.value = !sideBarSwtich.value;
     };
+    var subServicesSwtich = (0, vue_2.ref)(false);
+    var subServices = function subServices() {
+      subServicesSwtich.value = !subServicesSwtich.value;
+    };
     var __returned__ = {
       profileName: profileName,
       profileEmail: profileEmail,
       sectionOverview: sectionOverview,
       menuDashboard: menuDashboard,
       menuServices: menuServices,
+      subMenu_1: subMenu_1,
+      subMenu_2: subMenu_2,
       menuNotifications: menuNotifications,
       menuEventlog: menuEventlog,
       sectionAccount: sectionAccount,
@@ -17498,7 +17514,9 @@ exports["default"] = (0, vue_1.defineComponent)({
       currentComponent: currentComponent,
       changeComponent: changeComponent,
       sideBarSwtich: sideBarSwtich,
-      sideBar: sideBar
+      sideBar: sideBar,
+      subServicesSwtich: subServicesSwtich,
+      subServices: subServices
     };
     Object.defineProperty(__returned__, '__isScriptSetup', {
       enumerable: false,
@@ -17531,6 +17549,34 @@ exports["default"] = (0, vue_1.defineComponent)({
     var __returned__ = {
       svgMap: svgMap_vue_1["default"]
     };
+    Object.defineProperty(__returned__, '__isScriptSetup', {
+      enumerable: false,
+      value: true
+    });
+    return __returned__;
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/ts-loader/index.js??clonedRuleSet-23!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./assets/js/components/pages/MainEvent.vue?vue&type=script&setup=true&lang=ts":
+/*!*********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/ts-loader/index.js??clonedRuleSet-23!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./assets/js/components/pages/MainEvent.vue?vue&type=script&setup=true&lang=ts ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+var vue_1 = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+exports["default"] = (0, vue_1.defineComponent)({
+  name: 'MainEvent',
+  setup: function setup(__props, _a) {
+    var expose = _a.expose;
+    expose();
+    var __returned__ = {};
     Object.defineProperty(__returned__, '__isScriptSetup', {
       enumerable: false,
       value: true
@@ -17595,81 +17641,103 @@ var _hoisted_10 = /*#__PURE__*/_withScopeId(function () {
     "class": "h-10 w-auto p-2 cs-gray"
   }, null, -1 /* HOISTED */);
 });
-var _hoisted_11 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_11 = {
+  "class": "flex flex-col justify-start items-start"
+};
+var _hoisted_12 = ["src"];
+var _hoisted_13 = /*#__PURE__*/_withScopeId(function () {
   /*#__PURE__*/return (0, vue_1.createElementVNode)("img", {
     src: "images/services_icon.svg",
     "class": "h-10 w-auto p-2 cs-gray"
   }, null, -1 /* HOISTED */);
 });
-var _hoisted_12 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_14 = /*#__PURE__*/_withScopeId(function () {
+  /*#__PURE__*/return (0, vue_1.createElementVNode)("img", {
+    src: "images/dot_icon.svg",
+    "class": "h-8 w-auto p-1 cs-gray"
+  }, null, -1 /* HOISTED */);
+});
+var _hoisted_15 = {
+  "class": "font-medium mr-4"
+};
+var _hoisted_16 = /*#__PURE__*/_withScopeId(function () {
+  /*#__PURE__*/return (0, vue_1.createElementVNode)("img", {
+    src: "images/dot_icon.svg",
+    "class": "h-8 w-auto p-1 cs-gray"
+  }, null, -1 /* HOISTED */);
+});
+var _hoisted_17 = {
+  "class": "font-medium mr-4"
+};
+var _hoisted_18 = /*#__PURE__*/_withScopeId(function () {
   /*#__PURE__*/return (0, vue_1.createElementVNode)("img", {
     src: "images/messages_icon.svg",
     "class": "h-10 w-auto p-2 cs-gray"
   }, null, -1 /* HOISTED */);
 });
-var _hoisted_13 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_19 = /*#__PURE__*/_withScopeId(function () {
   /*#__PURE__*/return (0, vue_1.createElementVNode)("img", {
     src: "images/event_log_icon.svg",
     "class": "h-10 w-auto p-2 cs-gray"
   }, null, -1 /* HOISTED */);
 });
-var _hoisted_14 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_20 = /*#__PURE__*/_withScopeId(function () {
   /*#__PURE__*/return (0, vue_1.createElementVNode)("hr", {
     "class": "w-full text-gray-300"
   }, null, -1 /* HOISTED */);
 });
-var _hoisted_15 = {
+var _hoisted_21 = {
   "class": "flex flex-col justify-end items-start w-full"
 };
-var _hoisted_16 = {
+var _hoisted_22 = {
   "class": "flex flex-col justify-start items-start p-5 gap-4"
 };
-var _hoisted_17 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_23 = /*#__PURE__*/_withScopeId(function () {
   /*#__PURE__*/return (0, vue_1.createElementVNode)("img", {
     src: "images/chat_icon.svg",
     "class": "h-10 w-auto p-2 cs-gray"
   }, null, -1 /* HOISTED */);
 });
-var _hoisted_18 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_24 = /*#__PURE__*/_withScopeId(function () {
   /*#__PURE__*/return (0, vue_1.createElementVNode)("img", {
     src: "images/settings_icon.svg",
     "class": "h-10 w-auto p-2 cs-gray"
   }, null, -1 /* HOISTED */);
 });
-var _hoisted_19 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_25 = /*#__PURE__*/_withScopeId(function () {
   /*#__PURE__*/return (0, vue_1.createElementVNode)("img", {
     src: "images/login_icon.svg",
     "class": "h-10 w-auto p-2 cs-gray"
   }, null, -1 /* HOISTED */);
 });
-var _hoisted_20 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_26 = /*#__PURE__*/_withScopeId(function () {
   /*#__PURE__*/return (0, vue_1.createElementVNode)("img", {
     src: "images/switch_icon.svg",
     "class": "h-10 w-auto p-2 cs-gray"
   }, null, -1 /* HOISTED */);
 });
-var _hoisted_21 = [_hoisted_20];
-var _hoisted_22 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_27 = [_hoisted_26];
+var _hoisted_28 = /*#__PURE__*/_withScopeId(function () {
   /*#__PURE__*/return (0, vue_1.createElementVNode)("hr", {
     "class": "w-full text-gray-300"
   }, null, -1 /* HOISTED */);
 });
-var _hoisted_23 = {
+var _hoisted_29 = {
   "class": "flex flex-row justify-start items-center p-5 gap-x-4"
 };
-var _hoisted_24 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_30 = /*#__PURE__*/_withScopeId(function () {
   /*#__PURE__*/return (0, vue_1.createElementVNode)("img", {
     src: "images/3d_box_fill.svg",
     "class": "h-10 w-auto rounded-lg cursor-pointer bg-gray-200 border border-gray-300"
   }, null, -1 /* HOISTED */);
 });
-var _hoisted_25 = {
+var _hoisted_31 = {
   "class": "flex flex-col justify-start items-start"
 };
-var _hoisted_26 = {
+var _hoisted_32 = {
   "class": "text-gray-800 font-bold"
 };
-var _hoisted_27 = {
+var _hoisted_33 = {
   "class": "text-gray-400 font-bold"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
@@ -17681,57 +17749,71 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onClick: _cache[0] || (_cache[0] = function ($event) {
       return $setup.changeComponent(1);
     }),
-    "class": "flex flex-row justify-start items-center rounded-lg cs-hover cursor-pointer hover:bg-orange-200 text-gray-800"
+    "class": "flex flex-row justify-start items-center rounded-lg cs-hover cursor-pointer hover:bg-orange-200 text-gray-800 relative"
   }, [_hoisted_10, (0, vue_1.withDirectives)((0, vue_1.createElementVNode)("h1", {
     "class": "font-medium mr-4"
-  }, (0, vue_1.toDisplayString)($setup.menuDashboard), 513 /* TEXT, NEED_PATCH */), [[vue_1.vShow, $setup.sideBarSwtich]])]), (0, vue_1.createElementVNode)("div", {
+  }, (0, vue_1.toDisplayString)($setup.menuDashboard), 513 /* TEXT, NEED_PATCH */), [[vue_1.vShow, $setup.sideBarSwtich]])]), (0, vue_1.createElementVNode)("div", _hoisted_11, [(0, vue_1.createElementVNode)("div", {
     onClick: _cache[1] || (_cache[1] = function ($event) {
       return $setup.changeComponent(2);
     }),
-    "class": "flex flex-row justify-start items-center rounded-lg cs-hover cursor-pointer hover:bg-orange-200 text-gray-800"
-  }, [_hoisted_11, (0, vue_1.withDirectives)((0, vue_1.createElementVNode)("h1", {
+    "class": "flex flex-row justify-start items-center rounded-lg cs-hover cursor-pointer hover:bg-orange-200 text-gray-800 relative"
+  }, [(0, vue_1.createElementVNode)("img", {
+    onClick: $setup.subServices,
+    src: $setup.subServicesSwtich === true ? 'images/Expand_down.svg' : 'images/Expand_right.svg',
+    "class": (0, vue_1.normalizeClass)(["h-10 w-auto p-2 cs-gray absolute -ml-7 cursor-pointer", $setup.sideBarSwtich === true ? 'visible' : 'invisible'])
+  }, null, 10 /* CLASS, PROPS */, _hoisted_12), _hoisted_13, (0, vue_1.withDirectives)((0, vue_1.createElementVNode)("h1", {
     "class": "font-medium mr-4"
-  }, (0, vue_1.toDisplayString)($setup.menuServices), 513 /* TEXT, NEED_PATCH */), [[vue_1.vShow, $setup.sideBarSwtich]])]), (0, vue_1.createElementVNode)("div", {
+  }, (0, vue_1.toDisplayString)($setup.menuServices), 513 /* TEXT, NEED_PATCH */), [[vue_1.vShow, $setup.sideBarSwtich]])]), (0, vue_1.withDirectives)((0, vue_1.createElementVNode)("ul", null, [(0, vue_1.createElementVNode)("li", {
     onClick: _cache[2] || (_cache[2] = function ($event) {
+      return $setup.changeComponent(8);
+    }),
+    "class": "flex flex-row justify-start items-center rounded-lg cs-hover cursor-pointer hover:bg-orange-200 text-gray-800"
+  }, [_hoisted_14, (0, vue_1.createElementVNode)("h1", _hoisted_15, (0, vue_1.toDisplayString)($setup.subMenu_1), 1 /* TEXT */)]), (0, vue_1.createElementVNode)("li", {
+    onClick: _cache[3] || (_cache[3] = function ($event) {
+      return $setup.changeComponent(9);
+    }),
+    "class": "flex flex-row justify-start items-center rounded-lg cs-hover cursor-pointer hover:bg-orange-200 text-gray-800"
+  }, [_hoisted_16, (0, vue_1.createElementVNode)("h1", _hoisted_17, (0, vue_1.toDisplayString)($setup.subMenu_2), 1 /* TEXT */)])], 512 /* NEED_PATCH */), [[vue_1.vShow, $setup.sideBarSwtich && $setup.subServicesSwtich]])]), (0, vue_1.createElementVNode)("div", {
+    onClick: _cache[4] || (_cache[4] = function ($event) {
       return $setup.changeComponent(3);
     }),
-    "class": "flex flex-row justify-start items-center rounded-lg cs-hover cursor-pointer hover:bg-orange-200 text-gray-800"
-  }, [_hoisted_12, (0, vue_1.withDirectives)((0, vue_1.createElementVNode)("h1", {
+    "class": "flex flex-row justify-start items-center rounded-lg cs-hover cursor-pointer hover:bg-orange-200 text-gray-800 relative"
+  }, [_hoisted_18, (0, vue_1.withDirectives)((0, vue_1.createElementVNode)("h1", {
     "class": "font-medium mr-4"
   }, (0, vue_1.toDisplayString)($setup.menuNotifications), 513 /* TEXT, NEED_PATCH */), [[vue_1.vShow, $setup.sideBarSwtich]])]), (0, vue_1.createElementVNode)("div", {
-    onClick: _cache[3] || (_cache[3] = function ($event) {
+    onClick: _cache[5] || (_cache[5] = function ($event) {
       return $setup.changeComponent(4);
     }),
-    "class": "flex flex-row justify-start items-center rounded-lg cs-hover cursor-pointer hover:bg-orange-200 text-gray-800"
-  }, [_hoisted_13, (0, vue_1.withDirectives)((0, vue_1.createElementVNode)("h1", {
+    "class": "flex flex-row justify-start items-center rounded-lg cs-hover cursor-pointer hover:bg-orange-200 text-gray-800 relative"
+  }, [_hoisted_19, (0, vue_1.withDirectives)((0, vue_1.createElementVNode)("h1", {
     "class": "font-medium mr-4"
-  }, (0, vue_1.toDisplayString)($setup.menuEventlog), 513 /* TEXT, NEED_PATCH */), [[vue_1.vShow, $setup.sideBarSwtich]])])]), _hoisted_14]), (0, vue_1.createElementVNode)("div", _hoisted_15, [(0, vue_1.createElementVNode)("div", _hoisted_16, [(0, vue_1.createElementVNode)("small", {
+  }, (0, vue_1.toDisplayString)($setup.menuEventlog), 513 /* TEXT, NEED_PATCH */), [[vue_1.vShow, $setup.sideBarSwtich]])])]), _hoisted_20]), (0, vue_1.createElementVNode)("div", _hoisted_21, [(0, vue_1.createElementVNode)("div", _hoisted_22, [(0, vue_1.createElementVNode)("small", {
     "class": (0, vue_1.normalizeClass)(["text-gray-400 font-bold uppercase -mt-3 -ml-3", $setup.sideBarSwtich === true ? 'visible' : 'invisible'])
   }, (0, vue_1.toDisplayString)($setup.sectionAccount), 3 /* TEXT, CLASS */), (0, vue_1.createElementVNode)("div", {
-    onClick: _cache[4] || (_cache[4] = function ($event) {
+    onClick: _cache[6] || (_cache[6] = function ($event) {
       return $setup.changeComponent(5);
     }),
     "class": "flex flex-row justify-start items-center rounded-lg cs-hover cursor-pointer hover:bg-orange-200 text-gray-800"
-  }, [_hoisted_17, (0, vue_1.withDirectives)((0, vue_1.createElementVNode)("h1", {
+  }, [_hoisted_23, (0, vue_1.withDirectives)((0, vue_1.createElementVNode)("h1", {
     "class": "font-medium mr-4"
   }, (0, vue_1.toDisplayString)($setup.menuChat), 513 /* TEXT, NEED_PATCH */), [[vue_1.vShow, $setup.sideBarSwtich]])]), (0, vue_1.createElementVNode)("div", {
-    onClick: _cache[5] || (_cache[5] = function ($event) {
+    onClick: _cache[7] || (_cache[7] = function ($event) {
       return $setup.changeComponent(6);
     }),
     "class": "flex flex-row justify-start items-center rounded-lg cs-hover cursor-pointer hover:bg-orange-200 text-gray-800"
-  }, [_hoisted_18, (0, vue_1.withDirectives)((0, vue_1.createElementVNode)("h1", {
+  }, [_hoisted_24, (0, vue_1.withDirectives)((0, vue_1.createElementVNode)("h1", {
     "class": "font-medium mr-4"
   }, (0, vue_1.toDisplayString)($setup.menuSettings), 513 /* TEXT, NEED_PATCH */), [[vue_1.vShow, $setup.sideBarSwtich]])]), (0, vue_1.createElementVNode)("div", {
-    onClick: _cache[6] || (_cache[6] = function ($event) {
+    onClick: _cache[8] || (_cache[8] = function ($event) {
       return $setup.changeComponent(7);
     }),
     "class": "flex flex-row justify-start items-center rounded-lg cs-hover cursor-pointer hover:bg-orange-200 text-gray-800"
-  }, [_hoisted_19, (0, vue_1.withDirectives)((0, vue_1.createElementVNode)("h1", {
+  }, [_hoisted_25, (0, vue_1.withDirectives)((0, vue_1.createElementVNode)("h1", {
     "class": "font-medium mr-4"
   }, (0, vue_1.toDisplayString)($setup.menuLogin), 513 /* TEXT, NEED_PATCH */), [[vue_1.vShow, $setup.sideBarSwtich]])]), (0, vue_1.createElementVNode)("div", {
     onClick: $setup.sideBar,
     "class": "flex flex-row justify-start items-center rounded-lg cs-hover cursor-pointer hover:bg-orange-200 text-gray-800"
-  }, _hoisted_21)]), _hoisted_22, (0, vue_1.createElementVNode)("div", _hoisted_23, [_hoisted_24, (0, vue_1.withDirectives)((0, vue_1.createElementVNode)("div", _hoisted_25, [(0, vue_1.createElementVNode)("h1", _hoisted_26, (0, vue_1.toDisplayString)($setup.brandName), 1 /* TEXT */), (0, vue_1.createElementVNode)("small", _hoisted_27, (0, vue_1.toDisplayString)($setup.brandCopyright), 1 /* TEXT */)], 512 /* NEED_PATCH */), [[vue_1.vShow, $setup.sideBarSwtich]])])])], 2 /* CLASS */), (0, vue_1.createVNode)(vue_1.Transition, {
+  }, _hoisted_27)]), _hoisted_28, (0, vue_1.createElementVNode)("div", _hoisted_29, [_hoisted_30, (0, vue_1.withDirectives)((0, vue_1.createElementVNode)("div", _hoisted_31, [(0, vue_1.createElementVNode)("h1", _hoisted_32, (0, vue_1.toDisplayString)($setup.brandName), 1 /* TEXT */), (0, vue_1.createElementVNode)("small", _hoisted_33, (0, vue_1.toDisplayString)($setup.brandCopyright), 1 /* TEXT */)], 512 /* NEED_PATCH */), [[vue_1.vShow, $setup.sideBarSwtich]])])])], 2 /* CLASS */), (0, vue_1.createVNode)(vue_1.Transition, {
     name: "fade",
     mode: "out-in"
   }, {
@@ -17775,6 +17857,31 @@ exports.render = render;
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/ts-loader/index.js??clonedRuleSet-23!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./assets/js/components/pages/MainEvent.vue?vue&type=template&id=73bd76c5&ts=true":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/ts-loader/index.js??clonedRuleSet-23!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./assets/js/components/pages/MainEvent.vue?vue&type=template&id=73bd76c5&ts=true ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.render = void 0;
+var vue_1 = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+var _hoisted_1 = {
+  "class": "grid grid-cols-12 w-full"
+};
+var _hoisted_2 = /*#__PURE__*/(0, vue_1.createStaticVNode)("<div class=\"col-span-12 border-b h-[81px] top-0 sticky bg-white z-10\"><div class=\"flex flex-row justify-center items-center relative h-full\"><div class=\"absolute flex top-8 left-8\"><h1 class=\"text-gray-300 text-lg font-bold\"> Showing 1-6 of 6 results </h1></div><div class=\"flex relative\"><img src=\"images/Search.svg\" class=\"cursor-pointer z-0 -mr-7\"><input type=\"text\" value=\"Search\" class=\"bg-gray-100 py-1 pl-8 rounded w-80\"><img src=\"images/Close_round.svg\" class=\"cursor-pointer z-0 -ml-7\"></div><img src=\"images/Import.svg\" class=\"h-12 w-auto p-2 cs-gray absolute right-4 cursor-pointer\"></div></div><div class=\"col-span-12\"><table class=\"w-full\"><tr class=\"h-16 bg-gray-100 border-b\"><th class=\"text-gray-400 text-left text-sm pl-8\">Txn Hash</th><th class=\"text-gray-400 text-left text-sm pl-8\">Service</th><th class=\"text-gray-400 text-left text-sm pl-8\">Analytics</th><th class=\"text-gray-400 text-left text-sm pl-8\">Method</th><th class=\"text-gray-400 text-left text-sm pl-8\">From</th><th class=\"text-gray-400 text-left text-sm pl-8\">To</th><th class=\"text-gray-400 text-left text-sm pl-8\">Unit/n</th><th class=\"text-orange-400 text-left text-sm pl-8\">Cost/n</th></tr><tr class=\"bg-gray-50 border-b\"><td class=\"text-orange-400 text-left text-xs font-medium pl-8\"> 0xcECcf04a079b85D27Fd4932647... </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> Đaccounting </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"><img src=\"images/Line_up.svg\" class=\"h-6 w-auto cs-orange cursor-pointer\"></td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> Execute </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> 0x6e5c888b744cce1dae... </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> Binance </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\">Eth</td><td class=\"text-gray-400 text-left text-xs font-medium pl-8\"> n(eth) </td></tr><tr class=\"bg-gray-50 border-b\"><td class=\"text-orange-400 text-left text-xs font-medium pl-8\"> 0xe4t4g54g9tbe3n7f4723c44574b... </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> ServiceType 1 </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"><img src=\"images/Line_up.svg\" class=\"h-6 w-auto cs-orange cursor-pointer\"></td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> Execute </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> 0x6e5c888b744cce1dae... </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> Ribbon Finance </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\">Bzz</td><td class=\"text-gray-400 text-left text-xs font-medium pl-8\"> k(bzz) </td></tr><tr class=\"bg-gray-50 border-b\"><td class=\"text-orange-400 text-left text-xs font-medium pl-8\"> 0xor458vh3435tn353v63v343bvb... </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> ServiceType 1 </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"><img src=\"images/Line_up.svg\" class=\"h-6 w-auto cs-orange cursor-pointer\"></td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> Execute </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> Binance 18 </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> 0xf554zh56j545t45tl... </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\">Eth</td><td class=\"text-gray-400 text-left text-xs font-medium pl-8\"> n(eth) </td></tr><tr class=\"bg-gray-50 border-b\"><td class=\"text-orange-400 text-left text-xs font-medium pl-8\"> 0xk64g435b784b7v5v5v65643dfs... </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> ServiceType 1 </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"><img src=\"images/Line_up.svg\" class=\"h-6 w-auto cs-orange cursor-pointer\"></td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> Execute </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> 0x6e5c888b744cce1dae... </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> Ribbon Finance </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> Erc-20(1) </td><td class=\"text-gray-400 text-left text-xs font-medium pl-8\"> I(erc-20(1)) </td></tr><tr class=\"bg-gray-50 border-b\"><td class=\"text-orange-400 text-left text-xs font-medium pl-8\"> 0xr4763ff55g5v22jz343ng34j6asd... </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> ServiceType 1 </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"><img src=\"images/Line_up.svg\" class=\"h-6 w-auto cs-orange cursor-pointer\"></td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> Execute </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> Coinbase 5 </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> 0xf554zh56j545t45tl... </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> Erc-20(1) </td><td class=\"text-gray-400 text-left text-xs font-medium pl-8\"> I(erc-20(1)) </td></tr><tr class=\"bg-gray-50 border-b\"><td class=\"text-orange-400 text-left text-xs font-medium pl-8\"> 0xc7g30ng5h64bk83n3vnvvhr24f3... </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> ServiceType 1 </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"><img src=\"images/Line_up.svg\" class=\"h-6 w-auto cs-orange cursor-pointer\"></td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> Execute </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> 0x6e5c888b744cce1dae... </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> 0xf554zh56j545t45tl... </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> Erc-20(2) </td><td class=\"text-gray-400 text-left text-xs font-medium pl-8\"> m(erc-20(2)) </td></tr><tr class=\"bg-gray-50 border-b\"><td class=\"text-orange-400 text-left text-xs font-medium pl-8\"> 0xct38g74h45n4n45v56vxx56vh74... </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> Wallet </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"><img src=\"images/Line_up.svg\" class=\"h-6 w-auto cs-orange cursor-pointer\"></td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> Withdraw </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> 0xt73hg45bj2j4jtjkmnrge... </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> 0xf554zh56j545t45tl... </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> Erc-20(3) </td><td class=\"text-gray-400 text-left text-xs font-medium pl-8\"> p(erc-20(3)) </td></tr><tr class=\"bg-gray-50 border-b\"><td class=\"text-orange-400 text-left text-xs font-medium pl-8\"> 0xfg32t93f2h4m5dr572bf3j4z3gr2... </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> ServiceType 2 </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"><img src=\"images/Line_up.svg\" class=\"h-6 w-auto cs-orange cursor-pointer\"></td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> Execute </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> 0xp43jvb3b23bfb99439... </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> 0xf554zh56j545t45tl... </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\">Eth</td><td class=\"text-gray-400 text-left text-xs font-medium pl-8\"> n(eth) </td></tr><tr class=\"bg-gray-50 border-b\"><td class=\"text-orange-400 text-left text-xs font-medium pl-8\"> 0xcr2n3nv533nv38j7gcfd53gbfjs44... </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> ServiceType 2 </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"><img src=\"images/Line_up.svg\" class=\"h-6 w-auto cs-orange cursor-pointer\"></td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> Execute </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> 0xq36jb8e63487g34b44... </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> 0xf554zh56j545t45tl... </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\">Bzz</td><td class=\"text-gray-400 text-left text-xs font-medium pl-8\"> m(erc-20(2)) </td></tr><tr class=\"bg-gray-50 border-b\"><td class=\"text-orange-400 text-left text-xs font-medium pl-8\"> 0xbu4352832f5g69v37vcbuj5jhf27... </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> ServiceType 2 </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"><img src=\"images/Line_up.svg\" class=\"h-6 w-auto cs-orange cursor-pointer\"></td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> Execute </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> 0xz2338v3n904vb5467g... </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> 0xf554zh56j545t45tl... </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> Erc-20(2) </td><td class=\"text-gray-400 text-left text-xs font-medium pl-8\"> p(erc-20(3)) </td></tr><tr class=\"bg-gray-50 border-b\"><td class=\"text-orange-400 text-left text-xs font-medium pl-8\"> 0xi84ig5n3bvyat4fhg32f453z4563... </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> ServiceType 2 </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"><img src=\"images/Line_up.svg\" class=\"h-6 w-auto cs-orange cursor-pointer\"></td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> Execute </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> 0xar4335z45h45g35422... </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> 0xf554zh56j545t45tl... </td><td class=\"text-gray-800 text-left text-xs font-medium pl-8\"> Erc-20(3) </td><td class=\"text-gray-400 text-left text-xs font-medium pl-8\"> p(erc-20(3)) </td></tr></table></div>", 2);
+var _hoisted_4 = [_hoisted_2];
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return (0, vue_1.openBlock)(), (0, vue_1.createElementBlock)("div", _hoisted_1, _hoisted_4);
+}
+exports.render = render;
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./assets/js/components/pages/MainChat.vue?vue&type=template&id=fad9e606":
 /*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./assets/js/components/pages/MainChat.vue?vue&type=template&id=fad9e606 ***!
@@ -17789,24 +17896,6 @@ __webpack_require__.r(__webpack_exports__);
 
 function render(_ctx, _cache) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, "Main Chat");
-}
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./assets/js/components/pages/MainEvent.vue?vue&type=template&id=73bd76c5":
-/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./assets/js/components/pages/MainEvent.vue?vue&type=template&id=73bd76c5 ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   render: () => (/* binding */ render)
-/* harmony export */ });
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-
-function render(_ctx, _cache) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, "Main Event");
 }
 
 /***/ }),
@@ -17869,7 +17958,7 @@ var _hoisted_4 = {
 var _hoisted_5 = {
   "class": "grid grid-cols-12 gap-8"
 };
-var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"h-40 w-full\"><img src=\"images/Bag.svg\" class=\"h-24 w-full my-8\"></div><div class=\"flex flex-row justify-start p-2 border-t w-full gap-2\"><img src=\"images/User_icon.svg\" class=\"h-10 w-auto p-2 m-2 rounded-full cursor-pointer bg-gray-200\"><div class=\"flex flex-col justify-center items-start w-full\"><div class=\"flex flex-row justify-between items-center w-full\"><h1 class=\"text-gray-800 font-bold\">Daccounting service</h1><p class=\"text-gray-400 mx-4\">3.9k</p></div><p class=\"text-gray-400\">John Doe Inc</p></div></div>", 2);
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"h-40 w-full\"><img src=\"images/Bag.svg\" class=\"h-24 w-full my-8\"></div><div class=\"flex flex-row justify-start p-2 border-t w-full gap-2\"><img src=\"images/User_icon.svg\" class=\"h-10 w-auto p-2 m-2 rounded-full cursor-pointer bg-gray-200\"><div class=\"flex flex-col justify-center items-start w-full\"><div class=\"flex flex-row justify-between items-center w-full\"><h1 class=\"text-gray-800 font-bold\">Đaccounting service</h1><p class=\"text-gray-400 mx-4\">3.9k</p></div><p class=\"text-gray-400\">John Doe Inc</p></div></div>", 2);
 var _hoisted_8 = [_hoisted_6];
 function render(_ctx, _cache) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Header "), _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(20, function (item, index) {
@@ -17900,6 +17989,50 @@ var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 var _hoisted_2 = [_hoisted_1];
 function render(_ctx, _cache) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, _hoisted_2);
+}
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./assets/js/components/pages/subServices/ServiceCoverSurface.vue?vue&type=template&id=70c6845e":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./assets/js/components/pages/subServices/ServiceCoverSurface.vue?vue&type=template&id=70c6845e ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  "class": "grid grid-cols-12 w-full"
+};
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col-span-12 border-b h-[81px] top-0 sticky bg-white z-10\"><div class=\"flex flex-row justify-between items-center mx-8 relative h-full\"><h1 class=\"text-gray-800 text-lg\">CoverSurface</h1><div class=\"flex flex-row justify-center items-center cursor-pointer rounded-lg pr-2 hover:bg-gray-100\"><img src=\"images/Wallet_alt.svg\" class=\"h-10 w-auto p-2 cs-orange\"><h1 class=\"text-gray-800 text-lg\">Orders</h1></div></div></div><div class=\"col-span-12 flex flex-col justify-center items-center\"><div class=\"flex flex-col justify-center items-center relative m-[15%] mb-16\"><img src=\"images/Bag.svg\" class=\"h-24 w-full my-8 z-10\"><div class=\"bg-gray-100 rounded-full absolute h-60 w-60\"></div></div><h1 class=\"text-gray-800 text-2xl\">CoverSurface package...</h1></div>", 2);
+function render(_ctx, _cache) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Header "), _hoisted_2]);
+}
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./assets/js/components/pages/subServices/ServiceDaccounting.vue?vue&type=template&id=0f629241":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./assets/js/components/pages/subServices/ServiceDaccounting.vue?vue&type=template&id=0f629241 ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  "class": "grid grid-cols-12 w-full"
+};
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col-span-12 border-b h-[81px] top-0 sticky bg-white z-10\"><div class=\"flex flex-row justify-between items-center mx-8 relative h-full\"><h1 class=\"text-gray-800 text-lg\">Đaccounting</h1><div class=\"flex flex-row justify-center items-center cursor-pointer rounded-lg pr-2 hover:bg-gray-100\"><img src=\"images/Wallet_alt.svg\" class=\"h-10 w-auto p-2 cs-orange\"><h1 class=\"text-gray-800 text-lg\">Orders</h1></div></div></div><div class=\"col-span-12 flex flex-col justify-center items-center\"><div class=\"flex flex-col justify-center items-center relative m-[15%] mb-16\"><img src=\"images/Bag.svg\" class=\"h-24 w-full my-8 z-10\"><div class=\"bg-gray-100 rounded-full absolute h-60 w-60\"></div></div><h1 class=\"text-gray-800 text-2xl\">Đaccounting package...</h1></div>", 2);
+function render(_ctx, _cache) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Header "), _hoisted_2]);
 }
 
 /***/ }),
@@ -23670,7 +23803,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/*\n! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com\n*//*\n1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)\n2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)\n*/\n\n*,\n::before,\n::after {\n  box-sizing: border-box; /* 1 */\n  border-width: 0; /* 2 */\n  border-style: solid; /* 2 */\n  border-color: #e5e7eb; /* 2 */\n}\n\n::before,\n::after {\n  --tw-content: '';\n}\n\n/*\n1. Use a consistent sensible line-height in all browsers.\n2. Prevent adjustments of font size after orientation changes in iOS.\n3. Use a more readable tab size.\n4. Use the user's configured `sans` font-family by default.\n5. Use the user's configured `sans` font-feature-settings by default.\n6. Use the user's configured `sans` font-variation-settings by default.\n*/\n\nhtml {\n  line-height: 1.5; /* 1 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n  -moz-tab-size: 4; /* 3 */\n  -o-tab-size: 4;\n     tab-size: 4; /* 3 */\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"; /* 4 */\n  font-feature-settings: normal; /* 5 */\n  font-variation-settings: normal; /* 6 */\n}\n\n/*\n1. Remove the margin in all browsers.\n2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.\n*/\n\nbody {\n  margin: 0; /* 1 */\n  line-height: inherit; /* 2 */\n}\n\n/*\n1. Add the correct height in Firefox.\n2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)\n3. Ensure horizontal rules are visible by default.\n*/\n\nhr {\n  height: 0; /* 1 */\n  color: inherit; /* 2 */\n  border-top-width: 1px; /* 3 */\n}\n\n/*\nAdd the correct text decoration in Chrome, Edge, and Safari.\n*/\n\nabbr:where([title]) {\n  -webkit-text-decoration: underline dotted;\n          text-decoration: underline dotted;\n}\n\n/*\nRemove the default font size and weight for headings.\n*/\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-size: inherit;\n  font-weight: inherit;\n}\n\n/*\nReset links to optimize for opt-in styling instead of opt-out.\n*/\n\na {\n  color: inherit;\n  text-decoration: inherit;\n}\n\n/*\nAdd the correct font weight in Edge and Safari.\n*/\n\nb,\nstrong {\n  font-weight: bolder;\n}\n\n/*\n1. Use the user's configured `mono` font family by default.\n2. Correct the odd `em` font sizing in all browsers.\n*/\n\ncode,\nkbd,\nsamp,\npre {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/*\nAdd the correct font size in all browsers.\n*/\n\nsmall {\n  font-size: 80%;\n}\n\n/*\nPrevent `sub` and `sup` elements from affecting the line height in all browsers.\n*/\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\nsup {\n  top: -0.5em;\n}\n\n/*\n1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)\n2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)\n3. Remove gaps between table borders by default.\n*/\n\ntable {\n  text-indent: 0; /* 1 */\n  border-color: inherit; /* 2 */\n  border-collapse: collapse; /* 3 */\n}\n\n/*\n1. Change the font styles in all browsers.\n2. Remove the margin in Firefox and Safari.\n3. Remove default padding in all browsers.\n*/\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: inherit; /* 1 */\n  font-feature-settings: inherit; /* 1 */\n  font-variation-settings: inherit; /* 1 */\n  font-size: 100%; /* 1 */\n  font-weight: inherit; /* 1 */\n  line-height: inherit; /* 1 */\n  color: inherit; /* 1 */\n  margin: 0; /* 2 */\n  padding: 0; /* 3 */\n}\n\n/*\nRemove the inheritance of text transform in Edge and Firefox.\n*/\n\nbutton,\nselect {\n  text-transform: none;\n}\n\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Remove default button styles.\n*/\n\nbutton,\n[type='button'],\n[type='reset'],\n[type='submit'] {\n  -webkit-appearance: button; /* 1 */\n  background-color: transparent; /* 2 */\n  background-image: none; /* 2 */\n}\n\n/*\nUse the modern Firefox focus style for all focusable elements.\n*/\n\n:-moz-focusring {\n  outline: auto;\n}\n\n/*\nRemove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)\n*/\n\n:-moz-ui-invalid {\n  box-shadow: none;\n}\n\n/*\nAdd the correct vertical alignment in Chrome and Firefox.\n*/\n\nprogress {\n  vertical-align: baseline;\n}\n\n/*\nCorrect the cursor style of increment and decrement buttons in Safari.\n*/\n\n::-webkit-inner-spin-button,\n::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/*\n1. Correct the odd appearance in Chrome and Safari.\n2. Correct the outline style in Safari.\n*/\n\n[type='search'] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n\n/*\nRemove the inner padding in Chrome and Safari on macOS.\n*/\n\n::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Change font properties to `inherit` in Safari.\n*/\n\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}\n\n/*\nAdd the correct display in Chrome and Safari.\n*/\n\nsummary {\n  display: list-item;\n}\n\n/*\nRemoves the default spacing and border for appropriate elements.\n*/\n\nblockquote,\ndl,\ndd,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\nhr,\nfigure,\np,\npre {\n  margin: 0;\n}\n\nfieldset {\n  margin: 0;\n  padding: 0;\n}\n\nlegend {\n  padding: 0;\n}\n\nol,\nul,\nmenu {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\n/*\nReset default styling for dialogs.\n*/\ndialog {\n  padding: 0;\n}\n\n/*\nPrevent resizing textareas horizontally by default.\n*/\n\ntextarea {\n  resize: vertical;\n}\n\n/*\n1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)\n2. Set the default placeholder color to the user's configured gray 400 color.\n*/\n\ninput::-moz-placeholder, textarea::-moz-placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\n\ninput::placeholder,\ntextarea::placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\n\n/*\nSet the default cursor for buttons.\n*/\n\nbutton,\n[role=\"button\"] {\n  cursor: pointer;\n}\n\n/*\nMake sure disabled buttons don't get the pointer cursor.\n*/\n:disabled {\n  cursor: default;\n}\n\n/*\n1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)\n2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)\n   This can trigger a poorly considered lint error in some tools but is included by design.\n*/\n\nimg,\nsvg,\nvideo,\ncanvas,\naudio,\niframe,\nembed,\nobject {\n  display: block; /* 1 */\n  vertical-align: middle; /* 2 */\n}\n\n/*\nConstrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)\n*/\n\nimg,\nvideo {\n  max-width: 100%;\n  height: auto;\n}\n\n/* Make elements with the HTML hidden attribute stay hidden by default */\n[hidden] {\n  display: none;\n}\n\n*, ::before, ::after {\n  --tw-border-spacing-x: 0;\n  --tw-border-spacing-y: 0;\n  --tw-translate-x: 0;\n  --tw-translate-y: 0;\n  --tw-rotate: 0;\n  --tw-skew-x: 0;\n  --tw-skew-y: 0;\n  --tw-scale-x: 1;\n  --tw-scale-y: 1;\n  --tw-pan-x:  ;\n  --tw-pan-y:  ;\n  --tw-pinch-zoom:  ;\n  --tw-scroll-snap-strictness: proximity;\n  --tw-gradient-from-position:  ;\n  --tw-gradient-via-position:  ;\n  --tw-gradient-to-position:  ;\n  --tw-ordinal:  ;\n  --tw-slashed-zero:  ;\n  --tw-numeric-figure:  ;\n  --tw-numeric-spacing:  ;\n  --tw-numeric-fraction:  ;\n  --tw-ring-inset:  ;\n  --tw-ring-offset-width: 0px;\n  --tw-ring-offset-color: #fff;\n  --tw-ring-color: rgb(59 130 246 / 0.5);\n  --tw-ring-offset-shadow: 0 0 #0000;\n  --tw-ring-shadow: 0 0 #0000;\n  --tw-shadow: 0 0 #0000;\n  --tw-shadow-colored: 0 0 #0000;\n  --tw-blur:  ;\n  --tw-brightness:  ;\n  --tw-contrast:  ;\n  --tw-grayscale:  ;\n  --tw-hue-rotate:  ;\n  --tw-invert:  ;\n  --tw-saturate:  ;\n  --tw-sepia:  ;\n  --tw-drop-shadow:  ;\n  --tw-backdrop-blur:  ;\n  --tw-backdrop-brightness:  ;\n  --tw-backdrop-contrast:  ;\n  --tw-backdrop-grayscale:  ;\n  --tw-backdrop-hue-rotate:  ;\n  --tw-backdrop-invert:  ;\n  --tw-backdrop-opacity:  ;\n  --tw-backdrop-saturate:  ;\n  --tw-backdrop-sepia:  ;\n}\n\n::backdrop {\n  --tw-border-spacing-x: 0;\n  --tw-border-spacing-y: 0;\n  --tw-translate-x: 0;\n  --tw-translate-y: 0;\n  --tw-rotate: 0;\n  --tw-skew-x: 0;\n  --tw-skew-y: 0;\n  --tw-scale-x: 1;\n  --tw-scale-y: 1;\n  --tw-pan-x:  ;\n  --tw-pan-y:  ;\n  --tw-pinch-zoom:  ;\n  --tw-scroll-snap-strictness: proximity;\n  --tw-gradient-from-position:  ;\n  --tw-gradient-via-position:  ;\n  --tw-gradient-to-position:  ;\n  --tw-ordinal:  ;\n  --tw-slashed-zero:  ;\n  --tw-numeric-figure:  ;\n  --tw-numeric-spacing:  ;\n  --tw-numeric-fraction:  ;\n  --tw-ring-inset:  ;\n  --tw-ring-offset-width: 0px;\n  --tw-ring-offset-color: #fff;\n  --tw-ring-color: rgb(59 130 246 / 0.5);\n  --tw-ring-offset-shadow: 0 0 #0000;\n  --tw-ring-shadow: 0 0 #0000;\n  --tw-shadow: 0 0 #0000;\n  --tw-shadow-colored: 0 0 #0000;\n  --tw-blur:  ;\n  --tw-brightness:  ;\n  --tw-contrast:  ;\n  --tw-grayscale:  ;\n  --tw-hue-rotate:  ;\n  --tw-invert:  ;\n  --tw-saturate:  ;\n  --tw-sepia:  ;\n  --tw-drop-shadow:  ;\n  --tw-backdrop-blur:  ;\n  --tw-backdrop-brightness:  ;\n  --tw-backdrop-contrast:  ;\n  --tw-backdrop-grayscale:  ;\n  --tw-backdrop-hue-rotate:  ;\n  --tw-backdrop-invert:  ;\n  --tw-backdrop-opacity:  ;\n  --tw-backdrop-saturate:  ;\n  --tw-backdrop-sepia:  ;\n}\n.visible {\n  visibility: visible;\n}\n.invisible {\n  visibility: hidden;\n}\n.absolute {\n  position: absolute;\n}\n.relative {\n  position: relative;\n}\n.sticky {\n  position: sticky;\n}\n.left-8 {\n  left: 2rem;\n}\n.top-8 {\n  top: 2rem;\n}\n.top-0 {\n  top: 0px;\n}\n.z-0 {\n  z-index: 0;\n}\n.z-10 {\n  z-index: 10;\n}\n.col-span-12 {\n  grid-column: span 12 / span 12;\n}\n.col-span-3 {\n  grid-column: span 3 / span 3;\n}\n.m-4 {\n  margin: 1rem;\n}\n.m-8 {\n  margin: 2rem;\n}\n.m-16 {\n  margin: 4rem;\n}\n.m-2 {\n  margin: 0.5rem;\n}\n.mx-2 {\n  margin-left: 0.5rem;\n  margin-right: 0.5rem;\n}\n.mx-4 {\n  margin-left: 1rem;\n  margin-right: 1rem;\n}\n.my-2 {\n  margin-top: 0.5rem;\n  margin-bottom: 0.5rem;\n}\n.my-8 {\n  margin-top: 2rem;\n  margin-bottom: 2rem;\n}\n.mx-16 {\n  margin-left: 4rem;\n  margin-right: 4rem;\n}\n.my-4 {\n  margin-top: 1rem;\n  margin-bottom: 1rem;\n}\n.-ml-3 {\n  margin-left: -0.75rem;\n}\n.-ml-7 {\n  margin-left: -1.75rem;\n}\n.-mr-7 {\n  margin-right: -1.75rem;\n}\n.-mt-3 {\n  margin-top: -0.75rem;\n}\n.mb-2 {\n  margin-bottom: 0.5rem;\n}\n.ml-2 {\n  margin-left: 0.5rem;\n}\n.ml-auto {\n  margin-left: auto;\n}\n.mr-4 {\n  margin-right: 1rem;\n}\n.mb-4 {\n  margin-bottom: 1rem;\n}\n.mb-16 {\n  margin-bottom: 4rem;\n}\n.flex {\n  display: flex;\n}\n.grid {\n  display: grid;\n}\n.hidden {\n  display: none;\n}\n.h-10 {\n  height: 2.5rem;\n}\n.h-12 {\n  height: 3rem;\n}\n.h-\\[81px\\] {\n  height: 81px;\n}\n.h-full {\n  height: 100%;\n}\n.h-4 {\n  height: 1rem;\n}\n.h-8 {\n  height: 2rem;\n}\n.h-40 {\n  height: 10rem;\n}\n.h-24 {\n  height: 6rem;\n}\n.w-20 {\n  width: 5rem;\n}\n.w-3\\/5 {\n  width: 60%;\n}\n.w-48 {\n  width: 12rem;\n}\n.w-80 {\n  width: 20rem;\n}\n.w-\\[70\\%\\] {\n  width: 70%;\n}\n.w-auto {\n  width: auto;\n}\n.w-full {\n  width: 100%;\n}\n.max-w-xs {\n  max-width: 20rem;\n}\n.cursor-pointer {\n  cursor: pointer;\n}\n.grid-cols-12 {\n  grid-template-columns: repeat(12, minmax(0, 1fr));\n}\n.flex-row {\n  flex-direction: row;\n}\n.flex-col {\n  flex-direction: column;\n}\n.items-start {\n  align-items: flex-start;\n}\n.items-center {\n  align-items: center;\n}\n.justify-start {\n  justify-content: flex-start;\n}\n.justify-end {\n  justify-content: flex-end;\n}\n.justify-center {\n  justify-content: center;\n}\n.justify-between {\n  justify-content: space-between;\n}\n.justify-around {\n  justify-content: space-around;\n}\n.justify-evenly {\n  justify-content: space-evenly;\n}\n.gap-4 {\n  gap: 1rem;\n}\n.gap-8 {\n  gap: 2rem;\n}\n.gap-1 {\n  gap: 0.25rem;\n}\n.gap-16 {\n  gap: 4rem;\n}\n.gap-2 {\n  gap: 0.5rem;\n}\n.gap-12 {\n  gap: 3rem;\n}\n.gap-24 {\n  gap: 6rem;\n}\n.gap-10 {\n  gap: 2.5rem;\n}\n.gap-x-2 {\n  -moz-column-gap: 0.5rem;\n       column-gap: 0.5rem;\n}\n.gap-x-4 {\n  -moz-column-gap: 1rem;\n       column-gap: 1rem;\n}\n.gap-y-2 {\n  row-gap: 0.5rem;\n}\n.gap-y-8 {\n  row-gap: 2rem;\n}\n.overflow-y-scroll {\n  overflow-y: scroll;\n}\n.rounded {\n  border-radius: 0.25rem;\n}\n.rounded-full {\n  border-radius: 9999px;\n}\n.rounded-lg {\n  border-radius: 0.5rem;\n}\n.rounded-md {\n  border-radius: 0.375rem;\n}\n.border {\n  border-width: 1px;\n}\n.border-y {\n  border-top-width: 1px;\n  border-bottom-width: 1px;\n}\n.border-b {\n  border-bottom-width: 1px;\n}\n.border-r {\n  border-right-width: 1px;\n}\n.border-t {\n  border-top-width: 1px;\n}\n.border-gray-200 {\n  --tw-border-opacity: 1;\n  border-color: rgb(229 231 235 / var(--tw-border-opacity));\n}\n.border-gray-300 {\n  --tw-border-opacity: 1;\n  border-color: rgb(209 213 219 / var(--tw-border-opacity));\n}\n.border-gray-400 {\n  --tw-border-opacity: 1;\n  border-color: rgb(156 163 175 / var(--tw-border-opacity));\n}\n.bg-gray-100 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(243 244 246 / var(--tw-bg-opacity));\n}\n.bg-gray-200 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(229 231 235 / var(--tw-bg-opacity));\n}\n.bg-gray-50 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(249 250 251 / var(--tw-bg-opacity));\n}\n.bg-orange-200 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(254 215 170 / var(--tw-bg-opacity));\n}\n.bg-gray-300 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(209 213 219 / var(--tw-bg-opacity));\n}\n.bg-white {\n  --tw-bg-opacity: 1;\n  background-color: rgb(255 255 255 / var(--tw-bg-opacity));\n}\n.p-1 {\n  padding: 0.25rem;\n}\n.p-2 {\n  padding: 0.5rem;\n}\n.p-4 {\n  padding: 1rem;\n}\n.p-5 {\n  padding: 1.25rem;\n}\n.px-5 {\n  padding-left: 1.25rem;\n  padding-right: 1.25rem;\n}\n.py-1 {\n  padding-top: 0.25rem;\n  padding-bottom: 0.25rem;\n}\n.py-2 {\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n}\n.pl-8 {\n  padding-left: 2rem;\n}\n.text-xl {\n  font-size: 1.25rem;\n  line-height: 1.75rem;\n}\n.font-bold {\n  font-weight: 700;\n}\n.font-medium {\n  font-weight: 500;\n}\n.uppercase {\n  text-transform: uppercase;\n}\n.text-gray-300 {\n  --tw-text-opacity: 1;\n  color: rgb(209 213 219 / var(--tw-text-opacity));\n}\n.text-gray-400 {\n  --tw-text-opacity: 1;\n  color: rgb(156 163 175 / var(--tw-text-opacity));\n}\n.text-gray-800 {\n  --tw-text-opacity: 1;\n  color: rgb(31 41 55 / var(--tw-text-opacity));\n}\n.text-orange-400 {\n  --tw-text-opacity: 1;\n  color: rgb(251 146 60 / var(--tw-text-opacity));\n}\n.shadow-md {\n  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.shadow {\n  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.drop-shadow {\n  --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));\n  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n.filter {\n  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n.transition {\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n.cs-gray {\n    filter: invert(96%) sepia(0%) saturate(205%) hue-rotate(163deg)\n      brightness(87%) contrast(90%);\n  }\n.cs-hover:hover > img {\n    filter: invert(17%) sepia(6%) saturate(1244%) hue-rotate(187deg)\n      brightness(102%) contrast(88%);\n  }\n\nhtml,\nbody,\n#dashboard {\n  height: 100%;\n}\n\n.hover\\:cursor-pointer:hover {\n  cursor: pointer;\n}\n\n.hover\\:border-gray-300:hover {\n  --tw-border-opacity: 1;\n  border-color: rgb(209 213 219 / var(--tw-border-opacity));\n}\n\n.hover\\:bg-\\[\\#f9ceb2\\]:hover {\n  --tw-bg-opacity: 1;\n  background-color: rgb(249 206 178 / var(--tw-bg-opacity));\n}\n\n.hover\\:bg-orange-200:hover {\n  --tw-bg-opacity: 1;\n  background-color: rgb(254 215 170 / var(--tw-bg-opacity));\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "/*\n! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com\n*//*\n1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)\n2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)\n*/\n\n*,\n::before,\n::after {\n  box-sizing: border-box; /* 1 */\n  border-width: 0; /* 2 */\n  border-style: solid; /* 2 */\n  border-color: #e5e7eb; /* 2 */\n}\n\n::before,\n::after {\n  --tw-content: '';\n}\n\n/*\n1. Use a consistent sensible line-height in all browsers.\n2. Prevent adjustments of font size after orientation changes in iOS.\n3. Use a more readable tab size.\n4. Use the user's configured `sans` font-family by default.\n5. Use the user's configured `sans` font-feature-settings by default.\n6. Use the user's configured `sans` font-variation-settings by default.\n*/\n\nhtml {\n  line-height: 1.5; /* 1 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n  -moz-tab-size: 4; /* 3 */\n  -o-tab-size: 4;\n     tab-size: 4; /* 3 */\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"; /* 4 */\n  font-feature-settings: normal; /* 5 */\n  font-variation-settings: normal; /* 6 */\n}\n\n/*\n1. Remove the margin in all browsers.\n2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.\n*/\n\nbody {\n  margin: 0; /* 1 */\n  line-height: inherit; /* 2 */\n}\n\n/*\n1. Add the correct height in Firefox.\n2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)\n3. Ensure horizontal rules are visible by default.\n*/\n\nhr {\n  height: 0; /* 1 */\n  color: inherit; /* 2 */\n  border-top-width: 1px; /* 3 */\n}\n\n/*\nAdd the correct text decoration in Chrome, Edge, and Safari.\n*/\n\nabbr:where([title]) {\n  -webkit-text-decoration: underline dotted;\n          text-decoration: underline dotted;\n}\n\n/*\nRemove the default font size and weight for headings.\n*/\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-size: inherit;\n  font-weight: inherit;\n}\n\n/*\nReset links to optimize for opt-in styling instead of opt-out.\n*/\n\na {\n  color: inherit;\n  text-decoration: inherit;\n}\n\n/*\nAdd the correct font weight in Edge and Safari.\n*/\n\nb,\nstrong {\n  font-weight: bolder;\n}\n\n/*\n1. Use the user's configured `mono` font family by default.\n2. Correct the odd `em` font sizing in all browsers.\n*/\n\ncode,\nkbd,\nsamp,\npre {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/*\nAdd the correct font size in all browsers.\n*/\n\nsmall {\n  font-size: 80%;\n}\n\n/*\nPrevent `sub` and `sup` elements from affecting the line height in all browsers.\n*/\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\nsup {\n  top: -0.5em;\n}\n\n/*\n1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)\n2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)\n3. Remove gaps between table borders by default.\n*/\n\ntable {\n  text-indent: 0; /* 1 */\n  border-color: inherit; /* 2 */\n  border-collapse: collapse; /* 3 */\n}\n\n/*\n1. Change the font styles in all browsers.\n2. Remove the margin in Firefox and Safari.\n3. Remove default padding in all browsers.\n*/\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: inherit; /* 1 */\n  font-feature-settings: inherit; /* 1 */\n  font-variation-settings: inherit; /* 1 */\n  font-size: 100%; /* 1 */\n  font-weight: inherit; /* 1 */\n  line-height: inherit; /* 1 */\n  color: inherit; /* 1 */\n  margin: 0; /* 2 */\n  padding: 0; /* 3 */\n}\n\n/*\nRemove the inheritance of text transform in Edge and Firefox.\n*/\n\nbutton,\nselect {\n  text-transform: none;\n}\n\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Remove default button styles.\n*/\n\nbutton,\n[type='button'],\n[type='reset'],\n[type='submit'] {\n  -webkit-appearance: button; /* 1 */\n  background-color: transparent; /* 2 */\n  background-image: none; /* 2 */\n}\n\n/*\nUse the modern Firefox focus style for all focusable elements.\n*/\n\n:-moz-focusring {\n  outline: auto;\n}\n\n/*\nRemove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)\n*/\n\n:-moz-ui-invalid {\n  box-shadow: none;\n}\n\n/*\nAdd the correct vertical alignment in Chrome and Firefox.\n*/\n\nprogress {\n  vertical-align: baseline;\n}\n\n/*\nCorrect the cursor style of increment and decrement buttons in Safari.\n*/\n\n::-webkit-inner-spin-button,\n::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/*\n1. Correct the odd appearance in Chrome and Safari.\n2. Correct the outline style in Safari.\n*/\n\n[type='search'] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n\n/*\nRemove the inner padding in Chrome and Safari on macOS.\n*/\n\n::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/*\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Change font properties to `inherit` in Safari.\n*/\n\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}\n\n/*\nAdd the correct display in Chrome and Safari.\n*/\n\nsummary {\n  display: list-item;\n}\n\n/*\nRemoves the default spacing and border for appropriate elements.\n*/\n\nblockquote,\ndl,\ndd,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\nhr,\nfigure,\np,\npre {\n  margin: 0;\n}\n\nfieldset {\n  margin: 0;\n  padding: 0;\n}\n\nlegend {\n  padding: 0;\n}\n\nol,\nul,\nmenu {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\n/*\nReset default styling for dialogs.\n*/\ndialog {\n  padding: 0;\n}\n\n/*\nPrevent resizing textareas horizontally by default.\n*/\n\ntextarea {\n  resize: vertical;\n}\n\n/*\n1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)\n2. Set the default placeholder color to the user's configured gray 400 color.\n*/\n\ninput::-moz-placeholder, textarea::-moz-placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\n\ninput::placeholder,\ntextarea::placeholder {\n  opacity: 1; /* 1 */\n  color: #9ca3af; /* 2 */\n}\n\n/*\nSet the default cursor for buttons.\n*/\n\nbutton,\n[role=\"button\"] {\n  cursor: pointer;\n}\n\n/*\nMake sure disabled buttons don't get the pointer cursor.\n*/\n:disabled {\n  cursor: default;\n}\n\n/*\n1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)\n2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)\n   This can trigger a poorly considered lint error in some tools but is included by design.\n*/\n\nimg,\nsvg,\nvideo,\ncanvas,\naudio,\niframe,\nembed,\nobject {\n  display: block; /* 1 */\n  vertical-align: middle; /* 2 */\n}\n\n/*\nConstrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)\n*/\n\nimg,\nvideo {\n  max-width: 100%;\n  height: auto;\n}\n\n/* Make elements with the HTML hidden attribute stay hidden by default */\n[hidden] {\n  display: none;\n}\n\n*, ::before, ::after {\n  --tw-border-spacing-x: 0;\n  --tw-border-spacing-y: 0;\n  --tw-translate-x: 0;\n  --tw-translate-y: 0;\n  --tw-rotate: 0;\n  --tw-skew-x: 0;\n  --tw-skew-y: 0;\n  --tw-scale-x: 1;\n  --tw-scale-y: 1;\n  --tw-pan-x:  ;\n  --tw-pan-y:  ;\n  --tw-pinch-zoom:  ;\n  --tw-scroll-snap-strictness: proximity;\n  --tw-gradient-from-position:  ;\n  --tw-gradient-via-position:  ;\n  --tw-gradient-to-position:  ;\n  --tw-ordinal:  ;\n  --tw-slashed-zero:  ;\n  --tw-numeric-figure:  ;\n  --tw-numeric-spacing:  ;\n  --tw-numeric-fraction:  ;\n  --tw-ring-inset:  ;\n  --tw-ring-offset-width: 0px;\n  --tw-ring-offset-color: #fff;\n  --tw-ring-color: rgb(59 130 246 / 0.5);\n  --tw-ring-offset-shadow: 0 0 #0000;\n  --tw-ring-shadow: 0 0 #0000;\n  --tw-shadow: 0 0 #0000;\n  --tw-shadow-colored: 0 0 #0000;\n  --tw-blur:  ;\n  --tw-brightness:  ;\n  --tw-contrast:  ;\n  --tw-grayscale:  ;\n  --tw-hue-rotate:  ;\n  --tw-invert:  ;\n  --tw-saturate:  ;\n  --tw-sepia:  ;\n  --tw-drop-shadow:  ;\n  --tw-backdrop-blur:  ;\n  --tw-backdrop-brightness:  ;\n  --tw-backdrop-contrast:  ;\n  --tw-backdrop-grayscale:  ;\n  --tw-backdrop-hue-rotate:  ;\n  --tw-backdrop-invert:  ;\n  --tw-backdrop-opacity:  ;\n  --tw-backdrop-saturate:  ;\n  --tw-backdrop-sepia:  ;\n}\n\n::backdrop {\n  --tw-border-spacing-x: 0;\n  --tw-border-spacing-y: 0;\n  --tw-translate-x: 0;\n  --tw-translate-y: 0;\n  --tw-rotate: 0;\n  --tw-skew-x: 0;\n  --tw-skew-y: 0;\n  --tw-scale-x: 1;\n  --tw-scale-y: 1;\n  --tw-pan-x:  ;\n  --tw-pan-y:  ;\n  --tw-pinch-zoom:  ;\n  --tw-scroll-snap-strictness: proximity;\n  --tw-gradient-from-position:  ;\n  --tw-gradient-via-position:  ;\n  --tw-gradient-to-position:  ;\n  --tw-ordinal:  ;\n  --tw-slashed-zero:  ;\n  --tw-numeric-figure:  ;\n  --tw-numeric-spacing:  ;\n  --tw-numeric-fraction:  ;\n  --tw-ring-inset:  ;\n  --tw-ring-offset-width: 0px;\n  --tw-ring-offset-color: #fff;\n  --tw-ring-color: rgb(59 130 246 / 0.5);\n  --tw-ring-offset-shadow: 0 0 #0000;\n  --tw-ring-shadow: 0 0 #0000;\n  --tw-shadow: 0 0 #0000;\n  --tw-shadow-colored: 0 0 #0000;\n  --tw-blur:  ;\n  --tw-brightness:  ;\n  --tw-contrast:  ;\n  --tw-grayscale:  ;\n  --tw-hue-rotate:  ;\n  --tw-invert:  ;\n  --tw-saturate:  ;\n  --tw-sepia:  ;\n  --tw-drop-shadow:  ;\n  --tw-backdrop-blur:  ;\n  --tw-backdrop-brightness:  ;\n  --tw-backdrop-contrast:  ;\n  --tw-backdrop-grayscale:  ;\n  --tw-backdrop-hue-rotate:  ;\n  --tw-backdrop-invert:  ;\n  --tw-backdrop-opacity:  ;\n  --tw-backdrop-saturate:  ;\n  --tw-backdrop-sepia:  ;\n}\n.visible {\n  visibility: visible;\n}\n.invisible {\n  visibility: hidden;\n}\n.absolute {\n  position: absolute;\n}\n.relative {\n  position: relative;\n}\n.sticky {\n  position: sticky;\n}\n.left-8 {\n  left: 2rem;\n}\n.top-0 {\n  top: 0px;\n}\n.top-8 {\n  top: 2rem;\n}\n.right-4 {\n  right: 1rem;\n}\n.z-0 {\n  z-index: 0;\n}\n.z-10 {\n  z-index: 10;\n}\n.col-span-12 {\n  grid-column: span 12 / span 12;\n}\n.col-span-3 {\n  grid-column: span 3 / span 3;\n}\n.m-16 {\n  margin: 4rem;\n}\n.m-2 {\n  margin: 0.5rem;\n}\n.m-4 {\n  margin: 1rem;\n}\n.m-8 {\n  margin: 2rem;\n}\n.m-\\[15\\%\\] {\n  margin: 15%;\n}\n.mx-16 {\n  margin-left: 4rem;\n  margin-right: 4rem;\n}\n.mx-2 {\n  margin-left: 0.5rem;\n  margin-right: 0.5rem;\n}\n.mx-4 {\n  margin-left: 1rem;\n  margin-right: 1rem;\n}\n.mx-8 {\n  margin-left: 2rem;\n  margin-right: 2rem;\n}\n.my-2 {\n  margin-top: 0.5rem;\n  margin-bottom: 0.5rem;\n}\n.my-8 {\n  margin-top: 2rem;\n  margin-bottom: 2rem;\n}\n.-ml-3 {\n  margin-left: -0.75rem;\n}\n.-ml-7 {\n  margin-left: -1.75rem;\n}\n.-mr-7 {\n  margin-right: -1.75rem;\n}\n.-mt-3 {\n  margin-top: -0.75rem;\n}\n.mb-16 {\n  margin-bottom: 4rem;\n}\n.mb-2 {\n  margin-bottom: 0.5rem;\n}\n.ml-2 {\n  margin-left: 0.5rem;\n}\n.ml-auto {\n  margin-left: auto;\n}\n.mr-4 {\n  margin-right: 1rem;\n}\n.mt-10 {\n  margin-top: 2.5rem;\n}\n.mb-8 {\n  margin-bottom: 2rem;\n}\n.mb-12 {\n  margin-bottom: 3rem;\n}\n.ml-1 {\n  margin-left: 0.25rem;\n}\n.flex {\n  display: flex;\n}\n.table {\n  display: table;\n}\n.grid {\n  display: grid;\n}\n.hidden {\n  display: none;\n}\n.h-10 {\n  height: 2.5rem;\n}\n.h-12 {\n  height: 3rem;\n}\n.h-24 {\n  height: 6rem;\n}\n.h-4 {\n  height: 1rem;\n}\n.h-40 {\n  height: 10rem;\n}\n.h-8 {\n  height: 2rem;\n}\n.h-\\[81px\\] {\n  height: 81px;\n}\n.h-full {\n  height: 100%;\n}\n.h-1\\/3 {\n  height: 33.333333%;\n}\n.h-60 {\n  height: 15rem;\n}\n.h-16 {\n  height: 4rem;\n}\n.h-6 {\n  height: 1.5rem;\n}\n.w-20 {\n  width: 5rem;\n}\n.w-3\\/5 {\n  width: 60%;\n}\n.w-48 {\n  width: 12rem;\n}\n.w-80 {\n  width: 20rem;\n}\n.w-\\[70\\%\\] {\n  width: 70%;\n}\n.w-auto {\n  width: auto;\n}\n.w-full {\n  width: 100%;\n}\n.w-40 {\n  width: 10rem;\n}\n.w-1\\/3 {\n  width: 33.333333%;\n}\n.w-60 {\n  width: 15rem;\n}\n.max-w-xs {\n  max-width: 20rem;\n}\n.cursor-pointer {\n  cursor: pointer;\n}\n.grid-cols-12 {\n  grid-template-columns: repeat(12, minmax(0, 1fr));\n}\n.flex-row {\n  flex-direction: row;\n}\n.flex-col {\n  flex-direction: column;\n}\n.items-start {\n  align-items: flex-start;\n}\n.items-center {\n  align-items: center;\n}\n.justify-start {\n  justify-content: flex-start;\n}\n.justify-end {\n  justify-content: flex-end;\n}\n.justify-center {\n  justify-content: center;\n}\n.justify-between {\n  justify-content: space-between;\n}\n.justify-evenly {\n  justify-content: space-evenly;\n}\n.gap-10 {\n  gap: 2.5rem;\n}\n.gap-12 {\n  gap: 3rem;\n}\n.gap-16 {\n  gap: 4rem;\n}\n.gap-2 {\n  gap: 0.5rem;\n}\n.gap-4 {\n  gap: 1rem;\n}\n.gap-8 {\n  gap: 2rem;\n}\n.gap-x-2 {\n  -moz-column-gap: 0.5rem;\n       column-gap: 0.5rem;\n}\n.gap-x-4 {\n  -moz-column-gap: 1rem;\n       column-gap: 1rem;\n}\n.overflow-y-scroll {\n  overflow-y: scroll;\n}\n.rounded {\n  border-radius: 0.25rem;\n}\n.rounded-full {\n  border-radius: 9999px;\n}\n.rounded-lg {\n  border-radius: 0.5rem;\n}\n.rounded-md {\n  border-radius: 0.375rem;\n}\n.border {\n  border-width: 1px;\n}\n.border-y {\n  border-top-width: 1px;\n  border-bottom-width: 1px;\n}\n.border-b {\n  border-bottom-width: 1px;\n}\n.border-r {\n  border-right-width: 1px;\n}\n.border-t {\n  border-top-width: 1px;\n}\n.border-gray-200 {\n  --tw-border-opacity: 1;\n  border-color: rgb(229 231 235 / var(--tw-border-opacity));\n}\n.border-gray-300 {\n  --tw-border-opacity: 1;\n  border-color: rgb(209 213 219 / var(--tw-border-opacity));\n}\n.border-gray-400 {\n  --tw-border-opacity: 1;\n  border-color: rgb(156 163 175 / var(--tw-border-opacity));\n}\n.bg-gray-100 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(243 244 246 / var(--tw-bg-opacity));\n}\n.bg-gray-200 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(229 231 235 / var(--tw-bg-opacity));\n}\n.bg-gray-50 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(249 250 251 / var(--tw-bg-opacity));\n}\n.bg-orange-200 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(254 215 170 / var(--tw-bg-opacity));\n}\n.bg-white {\n  --tw-bg-opacity: 1;\n  background-color: rgb(255 255 255 / var(--tw-bg-opacity));\n}\n.bg-gray-300 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(209 213 219 / var(--tw-bg-opacity));\n}\n.bg-gray-400 {\n  --tw-bg-opacity: 1;\n  background-color: rgb(156 163 175 / var(--tw-bg-opacity));\n}\n.p-1 {\n  padding: 0.25rem;\n}\n.p-2 {\n  padding: 0.5rem;\n}\n.p-4 {\n  padding: 1rem;\n}\n.p-5 {\n  padding: 1.25rem;\n}\n.px-5 {\n  padding-left: 1.25rem;\n  padding-right: 1.25rem;\n}\n.py-1 {\n  padding-top: 0.25rem;\n  padding-bottom: 0.25rem;\n}\n.py-2 {\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n}\n.pl-8 {\n  padding-left: 2rem;\n}\n.pr-2 {\n  padding-right: 0.5rem;\n}\n.pl-2 {\n  padding-left: 0.5rem;\n}\n.pl-4 {\n  padding-left: 1rem;\n}\n.text-left {\n  text-align: left;\n}\n.text-lg {\n  font-size: 1.125rem;\n  line-height: 1.75rem;\n}\n.text-xl {\n  font-size: 1.25rem;\n  line-height: 1.75rem;\n}\n.text-2xl {\n  font-size: 1.5rem;\n  line-height: 2rem;\n}\n.text-base {\n  font-size: 1rem;\n  line-height: 1.5rem;\n}\n.text-sm {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n.text-xs {\n  font-size: 0.75rem;\n  line-height: 1rem;\n}\n.font-bold {\n  font-weight: 700;\n}\n.font-medium {\n  font-weight: 500;\n}\n.font-semibold {\n  font-weight: 600;\n}\n.uppercase {\n  text-transform: uppercase;\n}\n.text-gray-300 {\n  --tw-text-opacity: 1;\n  color: rgb(209 213 219 / var(--tw-text-opacity));\n}\n.text-gray-400 {\n  --tw-text-opacity: 1;\n  color: rgb(156 163 175 / var(--tw-text-opacity));\n}\n.text-gray-800 {\n  --tw-text-opacity: 1;\n  color: rgb(31 41 55 / var(--tw-text-opacity));\n}\n.text-orange-400 {\n  --tw-text-opacity: 1;\n  color: rgb(251 146 60 / var(--tw-text-opacity));\n}\n.text-orange-800 {\n  --tw-text-opacity: 1;\n  color: rgb(154 52 18 / var(--tw-text-opacity));\n}\n.shadow {\n  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.shadow-md {\n  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);\n  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n.drop-shadow {\n  --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));\n  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n.filter {\n  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);\n}\n.transition {\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;\n  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n.cs-gray {\n    filter: invert(96%) sepia(0%) saturate(205%) hue-rotate(163deg)\n      brightness(87%) contrast(90%);\n  }\n.cs-orange {\n    filter: invert(81%) sepia(43%) saturate(4943%) hue-rotate(332deg)\n      brightness(102%) contrast(97%);\n  }\n.cs-hover:hover > img {\n    filter: invert(17%) sepia(6%) saturate(1244%) hue-rotate(187deg)\n      brightness(102%) contrast(88%);\n  }\n\nhtml,\nbody,\n#dashboard {\n  height: 100%;\n}\n\n.hover\\:cursor-pointer:hover {\n  cursor: pointer;\n}\n\n.hover\\:border-gray-300:hover {\n  --tw-border-opacity: 1;\n  border-color: rgb(209 213 219 / var(--tw-border-opacity));\n}\n\n.hover\\:bg-\\[\\#f9ceb2\\]:hover {\n  --tw-bg-opacity: 1;\n  background-color: rgb(249 206 178 / var(--tw-bg-opacity));\n}\n\n.hover\\:bg-gray-100:hover {\n  --tw-bg-opacity: 1;\n  background-color: rgb(243 244 246 / var(--tw-bg-opacity));\n}\n\n.hover\\:bg-orange-200:hover {\n  --tw-bg-opacity: 1;\n  background-color: rgb(254 215 170 / var(--tw-bg-opacity));\n}\n\n.hover\\:cs-hover:hover:hover > img {\n    filter: invert(17%) sepia(6%) saturate(1244%) hue-rotate(187deg)\n      brightness(102%) contrast(88%);\n  }\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -24276,15 +24409,18 @@ if (false) {}
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   __esModule: () => (/* reexport safe */ _MainEvent_vue_vue_type_script_setup_true_lang_ts__WEBPACK_IMPORTED_MODULE_1__.__esModule),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _MainEvent_vue_vue_type_template_id_73bd76c5__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./MainEvent.vue?vue&type=template&id=73bd76c5 */ "./assets/js/components/pages/MainEvent.vue?vue&type=template&id=73bd76c5");
-/* harmony import */ var _home_matt_Documents_Git_swarmCS_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var _MainEvent_vue_vue_type_template_id_73bd76c5_ts_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./MainEvent.vue?vue&type=template&id=73bd76c5&ts=true */ "./assets/js/components/pages/MainEvent.vue?vue&type=template&id=73bd76c5&ts=true");
+/* harmony import */ var _MainEvent_vue_vue_type_script_setup_true_lang_ts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MainEvent.vue?vue&type=script&setup=true&lang=ts */ "./assets/js/components/pages/MainEvent.vue?vue&type=script&setup=true&lang=ts");
+/* harmony import */ var _home_matt_Documents_Git_swarmCS_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
-const script = {}
+
+
 
 ;
-const __exports__ = /*#__PURE__*/(0,_home_matt_Documents_Git_swarmCS_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_MainEvent_vue_vue_type_template_id_73bd76c5__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"assets/js/components/pages/MainEvent.vue"]])
+const __exports__ = /*#__PURE__*/(0,_home_matt_Documents_Git_swarmCS_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_MainEvent_vue_vue_type_script_setup_true_lang_ts__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_MainEvent_vue_vue_type_template_id_73bd76c5_ts_true__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"assets/js/components/pages/MainEvent.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -24393,6 +24529,56 @@ if (false) {}
 
 /***/ }),
 
+/***/ "./assets/js/components/pages/subServices/ServiceCoverSurface.vue":
+/*!************************************************************************!*\
+  !*** ./assets/js/components/pages/subServices/ServiceCoverSurface.vue ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _ServiceCoverSurface_vue_vue_type_template_id_70c6845e__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ServiceCoverSurface.vue?vue&type=template&id=70c6845e */ "./assets/js/components/pages/subServices/ServiceCoverSurface.vue?vue&type=template&id=70c6845e");
+/* harmony import */ var _home_matt_Documents_Git_swarmCS_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+const script = {}
+
+;
+const __exports__ = /*#__PURE__*/(0,_home_matt_Documents_Git_swarmCS_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_ServiceCoverSurface_vue_vue_type_template_id_70c6845e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"assets/js/components/pages/subServices/ServiceCoverSurface.vue"]])
+/* hot reload */
+if (false) {}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
+
+/***/ }),
+
+/***/ "./assets/js/components/pages/subServices/ServiceDaccounting.vue":
+/*!***********************************************************************!*\
+  !*** ./assets/js/components/pages/subServices/ServiceDaccounting.vue ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _ServiceDaccounting_vue_vue_type_template_id_0f629241__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ServiceDaccounting.vue?vue&type=template&id=0f629241 */ "./assets/js/components/pages/subServices/ServiceDaccounting.vue?vue&type=template&id=0f629241");
+/* harmony import */ var _home_matt_Documents_Git_swarmCS_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+const script = {}
+
+;
+const __exports__ = /*#__PURE__*/(0,_home_matt_Documents_Git_swarmCS_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_ServiceDaccounting_vue_vue_type_template_id_0f629241__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"assets/js/components/pages/subServices/ServiceDaccounting.vue"]])
+/* hot reload */
+if (false) {}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
+
+/***/ }),
+
 /***/ "./assets/js/components/partials/svgMap.vue":
 /*!**************************************************!*\
   !*** ./assets/js/components/partials/svgMap.vue ***!
@@ -24453,6 +24639,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./assets/js/components/pages/MainEvent.vue?vue&type=script&setup=true&lang=ts":
+/*!*************************************************************************************!*\
+  !*** ./assets/js/components/pages/MainEvent.vue?vue&type=script&setup=true&lang=ts ***!
+  \*************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   __esModule: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_ts_loader_index_js_clonedRuleSet_23_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_MainEvent_vue_vue_type_script_setup_true_lang_ts__WEBPACK_IMPORTED_MODULE_0__.__esModule),
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_ts_loader_index_js_clonedRuleSet_23_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_MainEvent_vue_vue_type_script_setup_true_lang_ts__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_ts_loader_index_js_clonedRuleSet_23_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_MainEvent_vue_vue_type_script_setup_true_lang_ts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/ts-loader/index.js??clonedRuleSet-23!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./MainEvent.vue?vue&type=script&setup=true&lang=ts */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/ts-loader/index.js??clonedRuleSet-23!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./assets/js/components/pages/MainEvent.vue?vue&type=script&setup=true&lang=ts");
+ 
+
+/***/ }),
+
 /***/ "./assets/js/components/Dashboard.vue?vue&type=template&id=5dbb7fc3&scoped=true&ts=true":
 /*!**********************************************************************************************!*\
   !*** ./assets/js/components/Dashboard.vue?vue&type=template&id=5dbb7fc3&scoped=true&ts=true ***!
@@ -24485,6 +24687,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./assets/js/components/pages/MainEvent.vue?vue&type=template&id=73bd76c5&ts=true":
+/*!****************************************************************************************!*\
+  !*** ./assets/js/components/pages/MainEvent.vue?vue&type=template&id=73bd76c5&ts=true ***!
+  \****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   __esModule: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_ts_loader_index_js_clonedRuleSet_23_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_3_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_MainEvent_vue_vue_type_template_id_73bd76c5_ts_true__WEBPACK_IMPORTED_MODULE_0__.__esModule),
+/* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_ts_loader_index_js_clonedRuleSet_23_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_3_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_MainEvent_vue_vue_type_template_id_73bd76c5_ts_true__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_ts_loader_index_js_clonedRuleSet_23_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_3_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_MainEvent_vue_vue_type_template_id_73bd76c5_ts_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/ts-loader/index.js??clonedRuleSet-23!../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./MainEvent.vue?vue&type=template&id=73bd76c5&ts=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/ts-loader/index.js??clonedRuleSet-23!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./assets/js/components/pages/MainEvent.vue?vue&type=template&id=73bd76c5&ts=true");
+
+
+/***/ }),
+
 /***/ "./assets/js/components/pages/MainChat.vue?vue&type=template&id=fad9e606":
 /*!*******************************************************************************!*\
   !*** ./assets/js/components/pages/MainChat.vue?vue&type=template&id=fad9e606 ***!
@@ -24496,21 +24714,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_3_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_MainChat_vue_vue_type_template_id_fad9e606__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_3_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_MainChat_vue_vue_type_template_id_fad9e606__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./MainChat.vue?vue&type=template&id=fad9e606 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./assets/js/components/pages/MainChat.vue?vue&type=template&id=fad9e606");
-
-
-/***/ }),
-
-/***/ "./assets/js/components/pages/MainEvent.vue?vue&type=template&id=73bd76c5":
-/*!********************************************************************************!*\
-  !*** ./assets/js/components/pages/MainEvent.vue?vue&type=template&id=73bd76c5 ***!
-  \********************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_3_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_MainEvent_vue_vue_type_template_id_73bd76c5__WEBPACK_IMPORTED_MODULE_0__.render)
-/* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_3_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_MainEvent_vue_vue_type_template_id_73bd76c5__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./MainEvent.vue?vue&type=template&id=73bd76c5 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./assets/js/components/pages/MainEvent.vue?vue&type=template&id=73bd76c5");
 
 
 /***/ }),
@@ -24571,6 +24774,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_3_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_MainSettings_vue_vue_type_template_id_6eb4ec70__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_3_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_MainSettings_vue_vue_type_template_id_6eb4ec70__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./MainSettings.vue?vue&type=template&id=6eb4ec70 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./assets/js/components/pages/MainSettings.vue?vue&type=template&id=6eb4ec70");
+
+
+/***/ }),
+
+/***/ "./assets/js/components/pages/subServices/ServiceCoverSurface.vue?vue&type=template&id=70c6845e":
+/*!******************************************************************************************************!*\
+  !*** ./assets/js/components/pages/subServices/ServiceCoverSurface.vue?vue&type=template&id=70c6845e ***!
+  \******************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_3_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ServiceCoverSurface_vue_vue_type_template_id_70c6845e__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_3_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ServiceCoverSurface_vue_vue_type_template_id_70c6845e__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./ServiceCoverSurface.vue?vue&type=template&id=70c6845e */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./assets/js/components/pages/subServices/ServiceCoverSurface.vue?vue&type=template&id=70c6845e");
+
+
+/***/ }),
+
+/***/ "./assets/js/components/pages/subServices/ServiceDaccounting.vue?vue&type=template&id=0f629241":
+/*!*****************************************************************************************************!*\
+  !*** ./assets/js/components/pages/subServices/ServiceDaccounting.vue?vue&type=template&id=0f629241 ***!
+  \*****************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_3_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ServiceDaccounting_vue_vue_type_template_id_0f629241__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_3_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ServiceDaccounting_vue_vue_type_template_id_0f629241__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./ServiceDaccounting.vue?vue&type=template&id=0f629241 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./assets/js/components/pages/subServices/ServiceDaccounting.vue?vue&type=template&id=0f629241");
 
 
 /***/ }),
