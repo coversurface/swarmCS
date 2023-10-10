@@ -10,7 +10,9 @@
     "/images/Expand_down.svg": "/images/Expand_down.svg",
     "/images/Expand_right (1).svg": "/images/Expand_right (1).svg",
     "/images/Expand_right.svg": "/images/Expand_right.svg",
+    "/images/Import.svg": "/images/Import.svg",
     "/images/Info_icon.svg": "/images/Info_icon.svg",
+    "/images/Line_up.svg": "/images/Line_up.svg",
     "/images/Notifications_icon.svg": "/images/Notifications_icon.svg",
     "/images/On_button_icon.svg": "/images/On_button_icon.svg",
     "/images/Search.svg": "/images/Search.svg",
@@ -27,13 +29,12 @@
     "/images/icon-128x128.png": "/images/icon-128x128.png",
     "/images/icon-16x16.png": "/images/icon-16x16.png",
     "/images/icon-48x48.png": "/images/icon-48x48.png",
+    "/images/login.svg": "/images/login.svg",
     "/images/login_icon.svg": "/images/login_icon.svg",
     "/images/messages_icon.svg": "/images/messages_icon.svg",
     "/images/services_icon.svg": "/images/services_icon.svg",
     "/images/settings_icon.svg": "/images/settings_icon.svg",
     "/images/surface_icon.svg": "/images/surface_icon.svg",
     "/images/switch_icon.svg": "/images/switch_icon.svg",
-    "/images/worldMap.svg": "/images/worldMap.svg",
-    "/images/Import.svg": "/images/Import.svg",
-    "/images/Line_up.svg": "/images/Line_up.svg"
+    "/images/worldMap.svg": "/images/worldMap.svg"
 }
