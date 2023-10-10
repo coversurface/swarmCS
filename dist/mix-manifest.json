@@ -5,6 +5,7 @@
     "/css/popup.css": "/css/popup.css",
     "/images/3d_box_fill.svg": "/images/3d_box_fill.svg",
     "/images/Bag.svg": "/images/Bag.svg",
+    "/images/Box_light.svg": "/images/Box_light.svg",
     "/images/Close_round.svg": "/images/Close_round.svg",
     "/images/Event_log_icon.svg": "/images/Event_log_icon.svg",
     "/images/Expand_down.svg": "/images/Expand_down.svg",
@@ -18,6 +19,7 @@
     "/images/Search.svg": "/images/Search.svg",
     "/images/Setting_line.svg": "/images/Setting_line.svg",
     "/images/Shop_icon.svg": "/images/Shop_icon.svg",
+    "/images/Update-bro.svg": "/images/Update-bro.svg",
     "/images/User_icon.svg": "/images/User_icon.svg",
     "/images/Wallet_alt.svg": "/images/Wallet_alt.svg",
     "/images/Widget_add.svg": "/images/Widget_add.svg",
@@ -37,6 +39,11 @@
     "/images/surface_icon.svg": "/images/surface_icon.svg",
     "/images/switch_icon.svg": "/images/switch_icon.svg",
     "/images/worldMap.svg": "/images/worldMap.svg",
-    "/images/Box_light.svg": "/images/Box_light.svg",
-    "/images/Update-bro.svg": "/images/Update-bro.svg"
+    "/images/bi_three-dots-vertical.svg": "/images/bi_three-dots-vertical.svg",
+    "/images/ci_phone-outline.svg": "/images/ci_phone-outline.svg",
+    "/images/fluent_video-16-regular.svg": "/images/fluent_video-16-regular.svg",
+    "/images/Send_fill.svg": "/images/Send_fill.svg",
+    "/images/Vector.svg": "/images/Vector.svg",
+    "/images/fluent_camera-24-regular.svg": "/images/fluent_camera-24-regular.svg",
+    "/images/fluent_emoji-laugh-16-regular.svg": "/images/fluent_emoji-laugh-16-regular.svg"
 }

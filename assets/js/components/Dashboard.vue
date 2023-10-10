@@ -203,7 +203,7 @@ const menuLogin = ref<string>("Login");
 const brandName = ref<string>("CoverSurface");
 const brandCopyright = ref<string>("Copyright - 2023");
 
-const currentComponent = ref(MainNotifications);
+const currentComponent = ref(MainChat);
 const changeComponent = (page: number) => {
   switch (page) {
     case 1:
