@@ -203,7 +203,7 @@ const menuLogin = ref<string>("Login");
 const brandName = ref<string>("CoverSurface");
 const brandCopyright = ref<string>("Copyright - 2023");
 
-const currentComponent = ref(MainDashboard);
+const currentComponent = ref(MainNotifications);
 const changeComponent = (page: number) => {
   switch (page) {
     case 1:
@@ -234,7 +234,7 @@ const changeComponent = (page: number) => {
       currentComponent.value = ServiceDaccounting;
       break;
     default:
-      currentComponent.value = MainDashboard; // Default to MainDashboard
+      currentComponent.value = MainDashboard;
   }
 };
 

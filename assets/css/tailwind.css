@@ -9,6 +9,19 @@ body,
 }
 
 @layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari, and Opera */
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge, and Firefox */
+    .hide-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+
   .cs-gray {
     filter: invert(96%) sepia(0%) saturate(205%) hue-rotate(163deg)
       brightness(87%) contrast(90%);
@@ -20,6 +33,10 @@ body,
   .cs-orange {
     filter: invert(81%) sepia(43%) saturate(4943%) hue-rotate(332deg)
       brightness(102%) contrast(97%);
+  }
+  .cs-light {
+    filter: invert(84%) sepia(35%) saturate(337%) hue-rotate(331deg)
+      brightness(98%) contrast(94%);
   }
 
   .cs-hover:hover > img {
